@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons/travel/plane Copy</title>
+    <defs>
+        <path d="M12,2.00000001 C13.1000001,2.00000001 14,2.90000001 14,4.00000001 C14,5.10000002 13.1000001,6.00000001 12,6.00000001 C10.9,6.00000001 10,5.10000002 10,4.00000001 C10,2.90000001 10.9,2.00000001 12,2.00000001 L12,2.00000001 Z M21,9.00000003 L15,9.00000003 L15,22 L13,22 L13,16 L11,16 L11,22 L9.00000001,22 L9.00000001,9.00000003 L3.00000001,9.00000003 L3.00000001,7.00000003 L21,7.00000003 L21,9.00000003 L21,9.00000003 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accessibility-Hub_D_Tab-3" transform="translate(-586, -975)">
+            <g id="Accessibility-plan-and-feedback-process-" transform="translate(0, 616)">
+                <g id="Intro" transform="translate(120, 172)">
+                    <g id="Content" transform="translate(466, 80)">
+                        <g id="Icons/travel/plane-Copy" transform="translate(-0, 107)">
+                            <polygon id="Base" points="0 0 24.0000001 0 24.0000001 24.0000001 0 24.0000001"></polygon>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Icon" fill-rule="nonzero"></g>
+                            <rect id="↳-🎨-Color" fill="#000000" mask="url(#mask-2)" x="5.00000112e-08" y="5.00000112e-08" width="24" height="24"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

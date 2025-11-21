@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../Downloads/basiswebsite"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "basiswebsite"
+	}
+}
+

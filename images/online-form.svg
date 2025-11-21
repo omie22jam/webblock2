@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Print</title>
+    <defs>
+        <path d="M4,6.00000002 L22,6.00000002 L22,4.00000002 L4,4.00000002 C2.90000001,4.00000002 2,4.90000002 2,6.00000002 L2,17 L0,17 L0,20 L14,20 L14,17 L4,17 L4,6.00000002 L4,6.00000002 Z M23.0000001,8.00000003 L17.0000001,8.00000003 C16.4500001,8.00000003 16.0000001,8.45000004 16.0000001,9.00000003 L16.0000001,19 C16.0000001,19.5500001 16.4500001,20 17.0000001,20 L23.0000001,20 C23.5500001,20 24.0000001,19.5500001 24.0000001,19 L24.0000001,9.00000003 C24.0000001,8.45000004 23.5500001,8.00000003 23.0000001,8.00000003 L23.0000001,8.00000003 Z M22.0000001,17 L18.0000001,17 L18.0000001,10 L22.0000001,10 L22.0000001,17 L22.0000001,17 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accessibility-Hub_D_Tab-3" transform="translate(-144, -3330)">
+            <g id="Plan" transform="translate(0, 2480)">
+                <g id="Feedback" transform="translate(120, 666)">
+                    <g id="Group-2" transform="translate(0, 160)">
+                        <g id="Group" transform="translate(24, 24)">
+                            <g id="Print" transform="translate(-0, -0)">
+                                <polygon id="Base" points="0 -6.6174449e-24 24.0000001 -6.6174449e-24 24.0000001 24.0000001 0 24.0000001"></polygon>
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="Icon" fill-rule="nonzero"></g>
+                                <rect id="↳-🎨-Color" fill="#000000" mask="url(#mask-2)" x="4.99999828e-08" y="4.9999926e-08" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Print</title>
+    <defs>
+        <path d="M20,4.00000002 L4.00000001,4.00000002 C2.90000001,4.00000002 2.01000001,4.90000002 2.01000001,6.00000002 L2.00000001,18 C2.00000001,19.1000001 2.90000001,20 4.00000001,20 L20,20 C21.1000001,20 22,19.1000001 22,18 L22,6.00000002 C22,4.90000002 21.1000001,4.00000002 20,4.00000002 L20,4.00000002 Z M20,8.00000002 L12,13 L4.00000002,8.00000002 L4.00000002,6.00000002 L12,11 L20,6.00000002 L20,8.00000002 L20,8.00000002 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accessibility-Hub_D_Tab-2" transform="translate(-144, -1666)">
+            <g id="Email" transform="translate(120, 1642)">
+                <g id="Print" transform="translate(24, 24)">
+                    <polygon id="Base" fill-rule="nonzero" points="3.55271368e-15 3.55271368e-15 24.0000001 3.55271368e-15 24.0000001 24.0000001 3.55271368e-15 24.0000001"></polygon>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Icon" fill-rule="nonzero"></g>
+                    <rect id="↳-🎨-Color" fill="#000000" mask="url(#mask-2)" x="4.99999864e-08" y="4.99999295e-08" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

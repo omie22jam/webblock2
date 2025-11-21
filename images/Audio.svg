@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Audio</title>
+    <defs>
+        <path d="M15,3.75000002 L15,15.3500001 C14.4125001,15.1375001 13.7875001,15.0000001 13.1250001,15.0000001 C10.0125,15.0000001 7.50000003,17.5125001 7.50000003,20.6250001 C7.50000003,23.7375001 10.0125,26.25 13.1250001,26.25 C16.0125001,26.25 18.3750001,24.0625001 18.6875001,21.25 L18.7500001,21.25 L18.7500001,7.50000003 L23.7500001,7.50000003 L23.7500001,3.75000002 L15,3.75000002 L15,3.75000002 Z" id="path-1"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Accessibility-Hub_D_Tab-3" transform="translate(-1065, -2857)">
+            <g id="Group-6" transform="translate(120, 2151)">
+                <g id="Alternate-formats" transform="translate(0, 562)">
+                    <g id="Audio" transform="translate(915, 114)">
+                        <g transform="translate(30, 30)">
+                            <polygon id="Base" points="0 0 30.0000001 0 30.0000001 30.0000001 0 30.0000001"></polygon>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Icon"></g>
+                            <rect id="↳-🎨-Color" fill="#000000" mask="url(#mask-2)" x="6.24999785e-08" y="6.24999785e-08" width="30" height="30"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

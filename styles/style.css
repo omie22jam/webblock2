@@ -1,31 +1,112 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+@font-face {
+	font-family: opensans-regular;
+	src: url(../fonts/opensans-regular.woff);
+}
+
+@font-face {
+	font-family: opensans-bold;
+	src: url(../fonts/opensans-bold\ .woff);
+}
+
+
+h1 {
+	display: flex;
+	justify-content: center;
+	font-family:opensans-bold;
 }
 
 
 
-
-
-
-/*********************/
-/* CUSTOM PROPERTIES */
-/*********************/
-:root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
 }
 
+nav {
+	order: -1;
+}
+
+nav button {
+	position: relative;
+	z-index: 1;
+}
+
+/* nav.is-open button img{
+	content: url()
+} */
+
+nav ul {
+	position: static;
+	inset: 0;
+	translate: -100% 0;
+	transition: 1s;
+
+}
+
+nav.is-open ul {
+	translate: 0 0;
+}
+
+@media (min-width:38em) {
+	nav {
+
+		order: 0;
+
+	}
+}
+
+nav button {
+	display: none;
+}
+
+nav ul {
+	padding: 0;
+	background: none;
+	position: static;
+	translate: 0 0;
+}
+
+nav li {
+	flex-basis: 0;
+	flex-grow: 0;
+}
+
+nav a {
+	border:none;
+	flex-direction: column;
+}
+
+header > a:last-of-type {
+    flex-direction:column;
+
+  }
 
 
+  @media (min-width:54em) {
+	header > a:last-of-type,
+	nav a {
+	  flex-direction:row;
+	}
+  }
 
+  img {
+	max-width: 100%;
+  }
 
-/****************/
-/* JOUW STYLING */
-/****************/
+  p :nth-child(1) {
+	align-items: center;
+  }
 
-/* jouw code */
+  section :nth-of-type(2){
+	
+  }
 
+  img p :nth-of-type(2){
+	display: flex;
+	justify-content: space-around;
+  }
+
+  
