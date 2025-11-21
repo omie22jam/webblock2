@@ -79,19 +79,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="./readme-images/breakdownschets.een" width="375px" alt="breakdown van de hele pagina">
+  <img src="./readme-images/frame1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="./readme-images/breakdownschets.twee" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="./readme-images/frame2.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <!-- ### wellicht nog een dynamisch deel (bijv filter): 
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 
 </details>
-
-
-
-
 
 ## Voortgang 1 (week 2)
 
@@ -110,12 +106,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Omra            | Yenthe             |   Arpine             | Laura       |
   
-   Hoe gebruik je    Aria labels en       Wanneer gebruik
-   nth-of-type in    custom properties    je flex en wanneeer
-   de css van de                          grid
-   beide schermen
-  
-  Arpine: Wanneer gebruik je flex en wanneeer grid
+  Omra: Hoe gebruik je  nth-of-type in de css van de beide schermen
+  Yenthe: Aria labels encustom properties
+  Arpine: Wanneer gebruikje flex en wanneeer grid
 
 
   ### Verslag van meeting
