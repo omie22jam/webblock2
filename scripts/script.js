@@ -2,11 +2,11 @@
 console.log("hi");
 
 const menuButton = document.querySelector("header button");
-const deNav = document.querySelector("header nav");
+const deNavUl = document.querySelector("header nav ul");
 
 menuButton.onclick = toggleMenu
 
 function toggleMenu () {
-    deNav.classList.toggle("is-open");
+    deNavUl.classList.toggle("is-open");
   }
 

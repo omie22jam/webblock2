@@ -107,21 +107,21 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Omra            | Yenthe             |   Arpine             | Laura       |
   
   Omra: Hoe gebruik je  nth-of-type in de css van de beide schermen
-  Yenthe: Aria labels encustom properties
+  Yenthe: Aria labels en custom properties
   Arpine: Wanneer gebruikje flex en wanneeer grid
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Navigatie en footer waren buiten de body
+  - Main en header waren er niet
+  - Sections weg halen en gebruik maken li en artciles
+  - Ik had een hele grote section met h2, h3 en h4s. Het werd mij aangeraden   om het in drie sections te doen. Dat is logischer en fijner om mee te werken.
+  - Css mapjes waren duidelijk uitgelegd want ik wist niet hoe ik de nth-of-type moest gebruiken voor beide schermen.
+  - Iconen gebruiken van svg repo
 
 </details>
-
-
 
 
 
@@ -131,7 +131,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik verwerkte alle feedback die ik heb gekregen. Ik had het gevoel dat mijn html toch niet helemaal klopt met al die lists erbij toegevoegd. tijdens de les vroeg ik om hulp en werd ik ermee geholpen. De lists is uitgelegd en ook voor mijn andere html code werd ik geholpen met hoe ik ze zou moeten typen. Ook ben ik geholpen met de css. Thuis heb ik alle html code hoed gezet en beginnen met de css. 
 
 
   ### Agenda voor meeting
@@ -167,9 +167,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
 </details>
-
-
-
 
 
 ## Voortgang 3 (week 4)
