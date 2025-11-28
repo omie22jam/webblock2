@@ -1,11 +1,13 @@
 
 
-/* :root {
-	Custom properties 
+:root {
+	--wit:white;
+	--donkergrijs:dimgray;
+	--zwart:black;
+	--blauw: 
+		
 
-	--primary-accent : #4242824; 
-	--secondary-accent : 
-} */
+}
 
 @font-face {
 
@@ -22,10 +24,30 @@ body {
     overflow-x: hidden;
   }
 
-h1 h2{
-	display: flex;
-	justify-content: center;
+h1,
+h2{
+	/* display: flex; */
 	font-family:opensans-bold;
+}
+
+p {
+    font-family:opensans-regular;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	font-family:opensans-regular;
+}
+
+li {
+	list-style-type: none;
+}
+
+/* font veranderen */
+article address a{
+	font-family: opensans-regular;
+	text-decoration: none;
 }
 /* 
 section:nth-of-type(1){
@@ -35,14 +57,24 @@ section:nth-of-type(1){
 h1{
 	/* padding:white; */
 	position:absolute;
+	font-family: opensans-regular;
+	align-items: center;
+	
 	/* top: 7rem;
 	left:5rem; */
 	width: 100%;
+	font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    /* text-align: center;
+    line-height: 44px;
+    margin: 40px auto 32px;
+    padding: 0 20px */
 }
 
-main img:first-of-type{
+/* main img:first-of-type{
 	flex-wrap: wrap;
-}
+} */
 
 /* section:nth-of-type(1) {
     display: flex;
@@ -56,10 +88,11 @@ nav{
 }
 
 nav img{
-	width: 40%;
+	width: 35%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	/* margin: auto; */
 }
 
 nav button{
@@ -100,9 +133,7 @@ nav ul.is-open {
 	translate: 0%;
 }
 
-/* header a{
-	flex-direction: column;
-} */
+
 
 
 
@@ -113,17 +144,22 @@ main > section:nth-of-type(1){
     /* width: 100%; */
  }
 
-main img:nth-of-type(1) {
+
+
+main > section:nth-of-type(1) img {
     width: 100%;
 	display: flex;
+	margin-bottom: -20%;
     /* flex-direction: column-reverse; */
-    align-items: center;
+    /* align-items: center; */
+
 }
 
-h1,
-main > p:nth-of-type(1),
-main > ul:nth-of-type(1){
+main > section:nth-of-type(2) p,
+main > ul:nth-of-type(1),
+h1{
     text-align: center;
+	align-content: center;
 
     background: white;
     padding: 2rem 1.5rem;
@@ -136,54 +172,42 @@ main > ul:nth-of-type(1){
     z-index: 10;
 }
 
-/* main > ul:nth-of-type(1) {
-	display: flex;
-	flex-direction: row;
-	background-color: aqua;
-	justify-content: space-around;
-} */
-
+main > section:nth-of-type(2) p{
+	margin-left: auto;
+	margin-right: auto;
+}
 
 section:nth-of-type(2) > ul{
 	display: grid;
-	/* flex-direction: row; */
-	grid-template-columns: 1fr 1fr 1fr;
-	background-color: aquamarine;
+	grid-template-columns: 2fr 2fr 2fr;
 	justify-content: space-evenly;
-
 	padding:1em;
+	font-size: smaller;
+	font-weight: bolder;
+	/* border-bottom-style: solid; */
 }
 
-p {
-    font-family:opensans-regular;
+main section:nth-of-type(2) a{
+	font-family: opensans-bold;
+	border-bottom-style: solid;
+	padding-bottom: 1.5em;
+	border-width:medium;
 }
 
-ul {
-	list-style: none;
+main section:nth-of-type(2) a:hover {
+	color: #005078;
 }
 
-a {
-	color: black;
-	text-decoration: none;
-	font-family:opensans-regular;
+/* hoe verander ik de lettertype van alleen deze a element */
+main section:nth-of-type(2) > li:nth-of-type(1) {
+	font-family: opensans-bold;
 }
-
-/* main ul:nth-of-type(1){
-	display: flex;
-	flex-direction: row;
-	background-color: green;
-} */
-
-
-/* main section:nth-of-type(1){
-	background-color: blue;
-	
-} */
 
 /* de sectie met h1 kan ik niet selecterem, de tweede sectie met h2 wordt mee veranderd */
+/*  heb de eerste foto verlaagd */
 
 main section:nth-of-type(3){
-	background-color:violet;
+	/* background-color:violet; */
 	border-radius: 2rem;
 	border: 0.020rem gray;
 	margin: 1rem;
@@ -221,14 +245,6 @@ section img:first-of-type{
 	width: 100%;
   }
 
-/* img:nth-of-type(3){
-	width: 100%;
-} */
-
-  p :nth-child(1) {
-	align-items: center;
-  }
-
 
   img p :nth-of-type(3){
 	display: flex;
@@ -236,82 +252,71 @@ section img:first-of-type{
   }
 
 
-/* header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: sticky;
-	top: 0;
-} */
-
-/* nav {
-	order: -1;
-}
-
-nav button {
-	position: relative;
-	z-index: 1;
-} */
-
-/* nav.is-open button img{
-	content: url()
-} */
-/* 
-nav ul {
-	position: static;
-	inset: 0;
-	translate: -100% 0;
-	transition: 1s;
-
-}
-
-nav.is-open ul {
-	translate: 0 0;
-} */
 
 
-/* nav ul {
-	padding: 0;
-	background: none;
-	position: static;
-	translate: 0 0;
-} */
-/* 
-nav li {
-	flex-basis: 0;
-	flex-grow: 0;
-}
-
-nav a {
-	border:none;
-	flex-direction: column;
-} */
-/* 
-header > a:last-of-type {
-    flex-direction:column;
-
-  } */
-
-
-  /* img {
-	max-width: 100%;
-  } */
-
-
-
-
-section:nth-of-type(5) > ul{
-	/* display: flex;
-	flex-direction: row; */
-	font-family: opensans-regular;
-
-	background-color:violet;
+  
+main section:nth-of-type(4) {
+	/* background-color: chocolate; */
 	border-radius: 2rem;
 	border: 0.020rem gray;
 	margin: 1rem;
 	padding: 1rem;
 	box-shadow: 1px 1px 20px 2px gray;
 }
+
+main section:nth-of-type(4) > ul{
+	display: flex;
+	flex-direction: row;
+	font-size: normal;
+	gap: 30%;
+}
+
+main section:nth-of-type(4) button a {
+	font-family: opensans-bold;
+	color: white;
+}
+
+section:nth-of-type(4) button{
+	margin: auto;
+
+	border: none;
+	font: inherit;
+	padding: 1em 2em 1em 2em;
+	border-radius: 0.9em;
+	background-color: #005078;
+	cursor: pointer;
+}
+
+section:nth-of-type(4) button:hover{
+	box-shadow: 0. 05 var(--white);
+	translate: 0 -.25em;
+}
+
+
+
+section:nth-of-type(4) button:focus-visible{
+	box-shadow: 0 .5em var(--zwart);
+	translate: 0 -.5em;
+
+	outline: none;
+}
+
+section:nth-of-type(4) button:active{
+	background-color: var(--lichtgrijs);
+	box-shadow: none;
+	translate: 0 0;
+}
+
+
+[aria-label="drukknop"] button:active {
+
+	background-color: white;
+	box-shadow:none;
+	translate:0 0;
+}
+
+
+
 
 
 section:nth-of-type(5) h3 {
@@ -323,8 +328,24 @@ section:nth-of-type(5) h3 svg {
 	width:1.5em;
 }
 
+section:nth-of-type(5) >ul {
+	/* background-color:violet; */
+	border-radius: 2rem;
+	border: 0.020rem gray;
+	margin: 1rem;
+	padding: 1rem;
+	box-shadow: 1px 1px 20px 2px gray;
+	font-family: opensans-regular;
+}
 
+section:nth-of-type(5) h3 {
+	display:flex;
+	align-items:center;
+}
 
+section:nth-of-type(5) h3 svg{
+	width:1.5;
+}
 
 
 
@@ -358,9 +379,10 @@ footer h2, footer a{
 	color: white;
 }
 
-footer section{
+/* footer section{
+	display: flex;
 	flex-direction: row;
-}
+} */
 
 
 
@@ -383,3 +405,5 @@ footer section{
 	}
 	
   }
+
+

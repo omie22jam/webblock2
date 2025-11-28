@@ -131,8 +131,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik verwerkte alle feedback die ik heb gekregen. Ik had het gevoel dat mijn html toch niet helemaal klopt met al die lists erbij toegevoegd. tijdens de les vroeg ik om hulp en werd ik ermee geholpen. De lists is uitgelegd en ook voor mijn andere html code werd ik geholpen met hoe ik ze zou moeten typen. Ook ben ik geholpen met de css. Thuis heb ik alle html code hoed gezet en beginnen met de css. 
+  Ik verwerkte alle feedback die ik heb gekregen. Ik had het gevoel dat mijn html toch niet helemaal klopt met al die lists erbij toegevoegd. tijdens de les vroeg ik om hulp en werd ik ermee geholpen. De lists is uitgelegd en ook voor mijn andere html code werd ik geholpen met hoe ik ze zou moeten typen. Ook ben ik geholpen met de css. Thuis heb ik alle html code goed gezet en begon met de css. 
 
+  Met de css moest ik vooral veel elementen gaan positioneren. Ik was een beetje geholpen in de les hiermee. Ik maakte gebruik van flex-directions voor mijn derde sectie. Het lukte mij niet om de h1 en p eronder, onder de image te zetten en een witte vlak erachter te zetten. ik heb chatgpt gevraagd om te helpen hiermee. Ik kreeg een code en zette die in mijn css. ik keek welke elementen ik belangrijk vond en welke onnodig. de stukken css die niks deden of die niet goed van gebruik waren heb ik verwijderen van de chatgpt code. En heb zelf de formaten aangepast ervan zodat het zou kloppen. De footer heb ik donker gemaakt en alle html ervan volledig toegevoegd. 
+  <img src="./readme-images/chatgpt.h1.p.png" width="375px" alt="code van chtagpt voor de het positioneren van de h1 en p">
+  de menu button werkte niet 
+
+  voor het gesprek ahd ik de vraag - Hoe verander ik de fonts van een 1 ul/li/ a element en niet van alle andere? Dit is mij gelukt op te lossen voor het gesprek. 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -142,6 +147,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
+
+
+Omra: 
+- Kan ik een article in de footer sections zetten?
+- hoe krijg ik de h2 van sectie vier onder de image
+- Op mobile is section vijf een hele blok, maar als je hem groter maakt zijn het      aparte blokken. Moet dit met css worden veranderen of html?
+- Hoe verander je de lettertype van de a in adress, de font is wel geselcteerd met de a maar het wordt niet gewizjigd. (adress weg doen?)
+ 
+ Yenthe:
+-
+
+
+ Laura:
+- Ik heb meerdere divs gebruikt in mijn html omdat ik anders het niet goed gepositioneerd kreeg met de opmaakt van bv flex, mag dit dan wel?
+- Hoe kan ik mijn header met bepaalde breedte de svg in het menu wel en niet tonen. mag dit met display none?
+- Bij mijn spotify section is er nog een kruisje die het sluit, moet dit werken? Hoe krijg ik deze rechts in de hoek gepositioneerd?
+- Ik heb pijltjes in mijn carousel nodig maar die krijg ik niet gepositioneerd, hoe doe ik dit?
+
+Arpine:
+-
+
 
 
   ### Verslag van meeting
