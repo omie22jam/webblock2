@@ -5,8 +5,6 @@
 	--donkergrijs:dimgray;
 	--zwart:black;
 	--blauw: 
-		
-
 }
 
 @font-face {
@@ -23,6 +21,12 @@
 body {
     overflow-x: hidden;
   }
+
+ main{
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
 
 h1,
 h2{
@@ -48,6 +52,7 @@ li {
 article address a{
 	font-family: opensans-regular;
 	text-decoration: none;
+	font-style: normal;
 }
 /* 
 section:nth-of-type(1){
@@ -72,22 +77,12 @@ h1{
     padding: 0 20px */
 }
 
-/* main img:first-of-type{
-	flex-wrap: wrap;
-} */
 
-/* section:nth-of-type(1) {
-    display: flex;
-    flex-direction: column-reverse; 
-    align-items: center;
-    width: 100%;
-} */
-
-nav{
+header{
 	display: flex;
 }
 
-nav img{
+header img{
 	width: 35%;
 	display: block;
 	margin-left: auto;
@@ -95,47 +90,72 @@ nav img{
 	/* margin: auto; */
 }
 
+
+
 nav button{
 	border: none;
 	padding: 0 0 0 0;
 	background: none;
 
-	display:flex;
+	/* display:flex;
 	justify-content:space-between;
-	align-items:center;
+	align-items:center; */
 
 	position:sticky;
+	z-index: 12;
 	top:0;
 }
 
 nav a{
+	/* display: grid;
+	grid-template-columns: 1fr;
+	display: flex;
 	flex-direction: column;
-	border: none;
+	border: none; */
+	color: aliceblue;
+	font-size: x-large;
 }
+
 
 nav ul{
 	background-color: gray;
-
 	position:fixed;
 	top:0;
 	bottom:0;
 	left:0;
 	right:0;
 	z-index: 11;
-
 	margin:0;
-	padding:1em;
 
 	translate: -100%;
+
+	padding-top: 3em;
+	padding-left: none;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+nav li a{
+	display: inline;
+	border: 0.09em solid black;
+	
 }
 
 nav ul.is-open {
 	translate: 0%;
 }
+/* 
+nav ul{
+	display: grid;
+	grid-template-columns: 1fr ;
+	
+} */
 
-
-
-
+/* nav ul li a{
+	color: aliceblue;
+	gap: 2em;
+} */
 
 main > section:nth-of-type(1){
 	display: flex;
@@ -167,7 +187,7 @@ h1{
     width: 80%;
     max-width: 900px;
 
-    margin-top: -60px;
+    margin-top: -90px;
     position: relative;
     z-index: 10;
 }
@@ -184,7 +204,6 @@ section:nth-of-type(2) > ul{
 	padding:1em;
 	font-size: smaller;
 	font-weight: bolder;
-	/* border-bottom-style: solid; */
 }
 
 main section:nth-of-type(2) a{
@@ -217,7 +236,6 @@ main section:nth-of-type(3){
 
  main section:nth-of-type(3) svg{
 	padding-right: 1rem;
-	padding-left: -10rem;
  }
 
  main li{
@@ -246,14 +264,35 @@ section img:first-of-type{
   }
 
 
-  img p :nth-of-type(3){
+img p :nth-of-type(3){
 	display: flex;
 	justify-content: space-around;
-  }
+ }
 
 
 
+@media (min-width:54em) {
+	section:nth-of-type(3) >  section:nth-of-type(1),
+	section:nth-of-type(3) >  section:nth-of-type(2){
+		display: flex;
+		flex-direction: row;
+	 }
 
+	 section:nth-of-type(3) > section:nth-of-type(2) img{
+		width: 50%;
+	 }	
+
+	 section:nth-of-type(3) > section:nth-of-type(1) img{
+		width: 20%;
+	 }
+}
+
+
+/* main section:nth-of-type(4) > h2,
+main section:nth-of-type(4) > img{
+	display: flex;
+	flex-direction: column
+} */
   
 main section:nth-of-type(4) {
 	/* background-color: chocolate; */
@@ -262,12 +301,21 @@ main section:nth-of-type(4) {
 	margin: 1rem;
 	padding: 1rem;
 	box-shadow: 1px 1px 20px 2px gray;
+	
 }
+
+/* werkt niet */
+main section:nth-of-type(4) img,
+main section:nth-of-type(4) h2 {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 
 main section:nth-of-type(4) > ul{
 	display: flex;
 	flex-direction: row;
-	font-size: normal;
+	font-size: medium;
 	gap: 30%;
 }
 
@@ -278,7 +326,6 @@ main section:nth-of-type(4) button a {
 
 section:nth-of-type(4) button{
 	margin: auto;
-
 	border: none;
 	font: inherit;
 	padding: 1em 2em 1em 2em;
@@ -287,17 +334,14 @@ section:nth-of-type(4) button{
 	cursor: pointer;
 }
 
-section:nth-of-type(4) button:hover{
-	box-shadow: 0. 05 var(--white);
-	translate: 0 -.25em;
+section:nth-of-type(4) button:hover {
+	box-shadow: 0.05 var(--white);
+	translate: -.25em;
 }
 
-
-
-section:nth-of-type(4) button:focus-visible{
-	box-shadow: 0 .5em var(--zwart);
+section:nth-of-type(4) button:focus-visible {
+	box-shadow: 0.5 var(--zwart);
 	translate: 0 -.5em;
-
 	outline: none;
 }
 
@@ -309,7 +353,6 @@ section:nth-of-type(4) button:active{
 
 
 [aria-label="drukknop"] button:active {
-
 	background-color: white;
 	box-shadow:none;
 	translate:0 0;
@@ -317,6 +360,32 @@ section:nth-of-type(4) button:active{
 
 
 
+section:nth-of-type(5) h2{
+	font-size: medium;
+	margin-left: 2em;
+	
+}
+
+section:nth-of-type(5) > p {
+	font-size: medium;
+	margin-left: 2em;
+}
+
+section:nth-of-type(5) > ul:nth-of-type(1){
+	font-size: small;
+}
+
+section:nth-of-type(5) > ul:nth-of-type(1) > li{
+	display: flex;
+	flex-direction: column;
+	background-color: slateblue;
+	list-style-type: circle
+	/* list-style-type: disc; */
+}
+
+/* section:nth-of-type(5) > ul:nth-of-type(1) > li:nth-of-type(1){
+	list-style-type: circle;
+} */
 
 
 section:nth-of-type(5) h3 {
@@ -328,15 +397,53 @@ section:nth-of-type(5) h3 svg {
 	width:1.5em;
 }
 
-section:nth-of-type(5) >ul {
+section:nth-of-type(5) >ul:nth-of-type(2) {
 	/* background-color:violet; */
 	border-radius: 2rem;
 	border: 0.020rem gray;
 	margin: 1rem;
 	padding: 1rem;
+	/* gap: 2em; */
 	box-shadow: 1px 1px 20px 2px gray;
 	font-family: opensans-regular;
 }
+
+
+@media(min-width:48em) {
+	section:nth-of-type(5) > ul:nth-of-type(2) > li > a{
+		padding: 0;
+		border-radius: 0;
+		color: aquamarine;
+		box-shadow: none;
+		/* margin: none; */
+	}
+
+	section:nth-of-type(5) >ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+		box-shadow: none;
+	}
+
+	section:nth-of-type(5) ul:nth-of-type(2) > li {
+		border-radius: 2rem;
+		border: 0.020rem gray;
+		margin: 1rem;
+		padding: 1rem;
+		box-shadow: 1px 1px 20px 2px gray;
+	}
+
+	section:nth-of-type(5) >ul:nth-of-type(2) {
+		border-radius: none;
+		border: none;
+		margin: none;
+		padding: none;
+		box-shadow: none;
+		font-family: opensans-regular;
+	}
+	
+}
+
 
 section:nth-of-type(5) h3 {
 	display:flex;
@@ -344,7 +451,7 @@ section:nth-of-type(5) h3 {
 }
 
 section:nth-of-type(5) h3 svg{
-	width:1.5;
+	width: 1.5em;
 }
 
 
@@ -358,26 +465,70 @@ section:nth-of-type(5) h3 svg{
 
 
 
+footer h2 {
+	font-family: openssans-bold;
+	font-size: medium;
+}
 
-
-
-
-
-
-
-
+footer a,
+footer p{
+	font-family: opensans-regular;
+	font-size: small;
+}
 
 footer{
 	background-color: black;
+	width: 100%;
 }
 
 footer img{
 	width: 20%;
 }
 
-footer h2, footer a{
+footer h2, 
+footer a,
+footer p{
 	color: white;
 }
+
+div{
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	/* grid-template-rows: auto; */
+	gap: 5em;
+}
+
+div section:nth-of-type(1){
+	grid-row: 1/ span 2 ;
+}
+div section:nth-of-type(3){
+	grid-row: 1/ span 1;
+}
+
+footer ul:nth-of-type(3) > a{
+	display: flex;
+	flex-direction: row;
+}
+ 
+
+
+/* 
+display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;        
+    align-items: start;
+} */
+
+/* footer section {
+	display: flex;
+	flex-direction: column;
+} */
+
+/* footer {
+	display: flex;
+	flex-direction: row;
+} */
+
 
 /* footer section{
 	display: flex;
@@ -388,9 +539,7 @@ footer h2, footer a{
 
   @media (min-width:38em) {
 	nav {
-
 		order: 0;
-
 	}
 
 	main section:nth-of-type(2) img{
@@ -403,7 +552,15 @@ footer h2, footer a{
 	nav a {
 	  flex-direction:row;
 	}
+
+	
 	
   }
 
 
+
+/* gap tussen de sections check  */
+/* responive our commitments, in articles zetten? */
+/*  tekst bruegr menu kan niet worden gewijzigd check */
+ /* kan ik artcile gebruiken bij footer? om te stijlen check*/
+ /*  list style punten terig op a elememt */

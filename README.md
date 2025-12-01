@@ -156,7 +156,8 @@ Omra:
 - Hoe verander je de lettertype van de a in adress, de font is wel geselcteerd met de a maar het wordt niet gewizjigd. (adress weg doen?)
  
  Yenthe:
--
+- Hoe kunnen mijn afbeeldingen mee schalen zodat ze langer worden in de lengte?
+- Hoe positioneren met display grid
 
 
  Laura:
@@ -166,13 +167,16 @@ Omra:
 - Ik heb pijltjes in mijn carousel nodig maar die krijg ik niet gepositioneerd, hoe doe ik dit?
 
 Arpine:
--
+- hoe kan ik ervoor zorgen dat de plaatjes in de carousel dezelfde grootte zijn?
+- waarom krijgt de grid een extra column erbij als er niks in zit?
+ 
 
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
+voor responsive media en/of clamp, vw,/ grid, grid-template-columns/ 
   - punt 1
   - punt 2
   - nog een punt
