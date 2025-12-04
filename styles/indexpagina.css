@@ -1,0 +1,789 @@
+:root {
+	--wit:white;
+    --lichtgrijs: lightgray;
+	--donkergrijs:#4A4F55;
+    --lichtzwart: #2A2A2A;
+	--zwart:black;
+	--blauw: #005078
+}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+@font-face {
+
+	font-family: opensans-regular;
+	src: url(../fonts/opensans-regular.woff);
+}
+
+@font-face {
+	font-family: opensans-bold;
+	src: url(../fonts/opensans-bold\ .woff);
+}
+
+body {
+    overflow-x: hidden;
+  }
+
+ main{
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+h1,
+h2{
+	/* display: flex; */
+	font-family:opensans-bold;
+}
+
+p {
+    font-family:opensans-regular;
+}
+
+a {
+	color: var(--zwart);
+	text-decoration: none;
+	font-family:opensans-regular;
+}
+
+li {
+	list-style-type: none;
+}
+
+strong{
+    font-family: opensans-bold;
+
+}
+
+/* font veranderen */
+article address a{
+	font-family: opensans-regular;
+	text-decoration: none;
+	font-style: normal;
+}
+/* 
+section:nth-of-type(1){
+	position:relative;
+} */
+
+h1{
+	/* padding:white; */
+	position:absolute;
+	font-family: opensans-regular;
+	align-items: center;
+	
+	/* top: 7rem;
+	left:5rem; */
+	width: 100%;
+	font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    /* text-align: center;
+    line-height: 44px;
+    margin: 40px auto 32px;
+    padding: 0 20px */
+}
+
+
+header{
+	display: flex;
+}
+
+header  > a{
+	width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin: auto; */
+}
+
+
+header img{
+	width: 35%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	/* margin: auto; */
+}
+
+
+nav button{
+	border: none;
+	padding: 0 0 0 0;
+	background: none;
+
+	/* display:flex;
+	justify-content:space-between;
+	align-items:center; */
+
+	position:sticky;
+	z-index: 12;
+	top:0;
+}
+
+nav a{
+	/* display: grid;
+	grid-template-columns: 1fr;
+	display: flex;
+	flex-direction: column;
+	border: none; */
+	color: var(--white);
+	font-size: x-large;
+}
+
+
+nav ul{
+	background-color: var(--donkergrijs);
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	z-index: 11;
+	margin:0;
+
+	translate: -100%;
+
+	padding-top: 3em;
+	padding-left: 0.5em;
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+    
+}
+
+nav li a{
+	display: inline;
+    color: var(--wit);
+	
+}
+
+nav li{
+    border-bottom: solid var(--lichtzwart);
+}
+
+nav ul li:nth-of-type(1) {
+    background-color: var(--lichtzwart);
+}
+
+
+nav ul.is-open {
+	translate: 0%;
+}
+/* 
+nav ul{
+	display: grid;
+	grid-template-columns: 1fr ;
+	
+} */
+
+/* nav ul li a{
+	color: aliceblue;
+	gap: 2em;
+} */
+
+main > section:nth-of-type(1){
+	display: flex;
+    flex-direction: column-reverse; 
+    align-items: center;
+    /* width: 100%; */
+ }
+
+
+
+main > section:nth-of-type(1) img {
+    width: 100%;
+	display: flex;
+	margin-bottom: -20%;
+    overflow: hidden;
+    display: hidden;
+    /* flex-direction: column-reverse; */
+    /* align-items: center; */
+
+}
+
+/* eerste section met h1 */
+main > section:nth-of-type(2) p,
+main > ul:nth-of-type(1),
+h1{
+    text-align: center;
+	align-content: center;
+
+    background: white;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 900px;
+
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+}
+
+main > section:nth-of-type(2) p{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section:nth-of-type(2) > ul{
+	display: grid;
+	grid-template-columns: 2fr 2fr 2fr;
+	justify-content: space-evenly;
+	padding:1em;
+	font-size: smaller;
+	font-weight: bolder;
+}
+
+main section:nth-of-type(2) a{
+	font-family: opensans-bold;
+	border-bottom-style: solid;
+	padding-bottom: 1.5em;
+	border-width:medium;
+}
+
+@media (min-width:54em) {
+    main > section:nth-of-type(2) p,
+    main > ul:nth-of-type(1),
+    h1{
+        text-align: center;
+        align-content: center;
+
+        background: white;
+        padding: 2em;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 90%;
+        gap: 0;
+
+        /* margin-top: -90px; */
+        position: relative;
+        z-index: 10;
+    }
+    main > section:nth-of-type(2) p{
+        margin-bottom: 0;
+    }
+
+    section:nth-of-type(2) > ul li{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        justify-content: space-evenly;
+        padding:1em;
+        padding-top: 2em;
+        font-size: medium;
+        font-weight: bolder;
+        background-color: var(--wit);
+        z-index: 10;
+        margin-top: 0;
+        gap: 0;
+    }
+
+    main section:nth-of-type(2) a{
+        font-family: opensans-bold;
+        border-bottom-style: solid;
+        padding-bottom: 1.5em;
+        border-width:medium;
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+
+
+/* 
+main > section:nth-of-type(1) img {
+    width: 100%;
+    height: 80%;
+	display: flex;
+	margin-bottom: -20%; */
+    /* flex-direction: column-reverse; */
+    /* align-items: center; */
+
+/* } */
+}
+
+
+main section:nth-of-type(2) a:hover {
+	color: #005078;
+}
+
+/* hoe verander ik de lettertype van alleen deze a element */
+main section:nth-of-type(2) > li:nth-of-type(1) {
+	font-family: opensans-bold;
+}
+
+/* de sectie met h1 kan ik niet selecterem, de tweede sectie met h2 wordt mee veranderd */
+/*  heb de eerste foto verlaagd */
+
+main section:nth-of-type(3){
+	/* background-color:violet; */
+	border-radius: 2rem;
+	border: 0.020rem var(--lichtzwart);
+	margin: 1rem;
+	padding: 1rem;
+	box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+ }
+
+ main section:nth-of-type(3) svg{
+	padding-right: 1rem;
+ }
+
+ main > section:nth-of-type(3) li{
+    display: flex;
+	flex-direction:row;
+ }
+
+ main > section:nth-of-type(3) img:nth-of-type(1) {
+    width: 10em;
+    background-image: url(../images/H1fotoindex.png);
+ }
+
+ @media (min-width:54em) {
+	section:nth-of-type(3) {
+		display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 0;
+	 }
+
+     section:nth-of-type(3) img:nth-of-type(2) {
+		display: block;
+        width: 100%;
+        grid-row: 1 / span 7;
+        grid-column-start: 1;
+	 }	
+
+     section:nth-of-type(3) h2,
+     section:nth-of-type(3) p{
+        font-size: small;
+        margin: 1em;
+     }
+
+     section:nth-of-type(3) svg{
+        width: 10%;
+
+     }
+
+     section:nth-of-type(3) li > p:nth-of-type(1){
+        padding: 0;
+        background-color: aqua;
+        max-height: 0.5rem;
+     }
+
+
+	 
+}
+
+
+
+
+
+
+
+
+
+ main > section:nth-of-type(1) li{
+	display: flex;
+	flex-direction:row;
+ }
+
+ main > section:nth-of-type(2) li{
+    display: flex;
+	flex-direction:row;
+ }
+
+ .visually-hidden {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+
+
+main section:nth-of-type(2) img{
+	display: none;
+}
+
+
+main section img:first-of-type{
+	width: 100%;
+  }
+
+/* 
+img p :nth-of-type(3){
+	display: flex;
+	justify-content: space-around;
+    padding: 1em;
+    background-color: blueviolet;
+ } */
+
+
+
+
+
+
+/* main section:nth-of-type(4) > h2,
+main section:nth-of-type(4) > img{
+	display: flex;
+	flex-direction: column
+} */
+  
+main section:nth-of-type(4) {
+	/* background-color: chocolate; */
+	border-radius: 2rem;
+	border: 0.020rem var(--lichtzwart);
+	margin: 1rem;
+	box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+	display: flex;
+	flex-direction: column;
+    overflow: hidden;
+    /* padding: 1em; */
+}
+
+main section:nth-of-type(4) h2,
+main section:nth-of-type(4) p,
+main section:nth-of-type(4) a {
+    margin: 1rem
+
+}
+main section:nth-of-type(4) a {
+    display: inline-block;
+    margin: 0 1rem 0.5rem 1rem;
+    color: var(--blauw);
+  }
+
+
+main section:nth-of-type(4) img{
+	order: -1;
+    object-fit: cover;
+    padding: 0;
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    /* margin: -1em; */
+    
+  }
+
+main section:nth-of-type(4) > ul{
+	display: flex;
+	flex-direction: column;
+	font-size: medium;
+	gap: 10%;
+	margin-left: -2em;
+}
+
+main section:nth-of-type(4) button a {
+	font-family: opensans-bold;
+	color: white;
+}
+
+section:nth-of-type(4) button{
+	margin: auto;
+	border: none;
+	font: inherit;
+	padding-top: 1rem;
+    padding-bottom: 1rem;
+	border-radius: 0.9em;
+	background-color: #005078;
+	cursor: pointer;
+	margin-left: -0.2em;
+    font-size: small;
+
+    display: inline-block;
+    width: auto;
+    margin-right: 8em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+    /* padding-left: 0;
+    padding-right: 0; */
+}
+
+section:nth-of-type(4) button:hover {
+	box-shadow: 0.05 var(--white);
+	translate: 0 .5em;
+}
+
+section:nth-of-type(4) button:focus-visible {
+	box-shadow: 1 var(--zwart);
+	translate: 0 -.5em;
+	outline: none;
+}
+
+section:nth-of-type(4) button:active{
+	background-color: var(--lichtgrijs);
+	box-shadow: none;
+	translate: 0 0;
+}
+
+
+[aria-label="drukknop"] button:active {
+	background-color: white;
+	box-shadow:none;
+	translate:0 0;
+}
+
+
+@media (min-width:54em) {
+	section:nth-of-type(4) {
+		display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto 1fr auto;
+        align-items: start;
+        gap: 0;
+        overflow: hidden;
+     
+	 }
+
+     section:nth-of-type(4) img {
+		display: block;
+        width: 100%;
+        grid-column: 1 / span 2;
+        grid-column-start: 1;
+        width: 50%;
+	 }	
+
+     section:nth-of-type(4)h2,
+     section:nth-of-type(4) p,
+     section:nth-of-type(4) a,
+     section:nth-of-type(4) button{
+        grid-row: 2 / span 3;
+        
+     }
+
+
+     section:nth-of-type(4) svg{
+        width: 10%;
+
+     }
+
+    }
+
+
+
+
+
+
+section:nth-of-type(5) h2{
+	font-size: medium;
+	margin-left: 2em;
+	
+}
+
+section:nth-of-type(5) > p {
+	font-size: medium;
+	margin-left: 2em;
+}
+
+section:nth-of-type(5) > ul:nth-of-type(1){
+	font-size: small;
+}
+
+section:nth-of-type(5) > ul:nth-of-type(1) > li {
+	/* display: flex;
+	flex-direction: column; */
+	display: list-item;
+	list-style-type: disc;
+	line-height: 2em;
+	/* list-style-type: disc; */
+}
+
+/* section:nth-of-type(5) > ul:nth-of-type(1) > li::marker{
+	background-color: blueviolet;
+} */
+
+section:nth-of-type(5) p > a{
+    color: var(--blauw);
+    text-decoration: underline var(--blauw);
+}
+
+section:nth-of-type(5) li:nth-of-type(1) a{
+    color: var(--blauw);
+    font-family: opensans-bold;
+    font-size: small;
+}
+
+section:nth-of-type(5) li:nth-of-type(2) a{
+    color: var(--blauw);
+    font-family: opensans-bold;
+    font-size: small;
+}
+
+section:nth-of-type(5) h3 {
+	display:flex;
+	align-items:center;
+}
+
+section:nth-of-type(5) h3 svg {
+	width:1.5em;
+}
+
+section:nth-of-type(5) >ul:nth-of-type(2) {
+	/* background-color:violet; */
+	border-radius: 1rem;
+	border: 0.020rem var(--lichtzwart);
+	margin: 1rem;
+	padding: 1rem;
+	/* gap: 2em; */
+	box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+	font-family: opensans-regular;
+}
+
+
+@media(min-width:48em) {
+	section:nth-of-type(5) > ul:nth-of-type(2) > li > a{
+		padding: 0;
+		border-radius: 0;
+		color: aquamarine;
+		box-shadow: none;
+		/* margin: none; */
+	}
+
+	section:nth-of-type(5) >ul {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 2em;
+		box-shadow: none;
+        border: none;
+	}
+
+	section:nth-of-type(5) ul:nth-of-type(2) > li {
+		border-radius: 2rem;
+		border: 0.020rem gray;
+		margin: 2rem;
+		padding: 1rem;
+		box-shadow: 1px 1px 20px 2px gray;
+	}
+
+	section:nth-of-type(5) >ul:nth-of-type(2) {
+		border-radius: 0;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		box-shadow: 0;
+		font-family: opensans-regular;
+        background: none;
+	}
+	
+}
+
+
+section:nth-of-type(5) h3 {
+	display:flex;
+	align-items:center;
+}
+
+section:nth-of-type(5) h3 svg{
+	width: 1.5em;
+}
+
+
+
+
+
+footer h2 {
+	font-family: openssans-bold;
+	font-size: medium;
+}
+
+footer a,
+footer p{
+	font-family: opensans-regular;
+	font-size: smaller;
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	margin-top: 2em;
+}
+
+footer h2, 
+footer a,
+footer p{
+	color: white;
+}
+
+div{
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 1em;
+}
+
+div section:nth-of-type(1){
+	grid-row: 1/ span 2 ;
+}
+
+footer section img{
+	width: 20%;
+}
+
+footer > section:nth-of-type(1) {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1em;
+}
+
+footer > section:nth-of-type(1) p{
+	padding-top: 2em;
+}
+
+footer > ul:nth-of-type(1){
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 1em;
+}
+
+footer > ul:nth-of-type(2){
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	gap: 2em;
+}
+
+
+
+
+ 
+
+
+  @media (min-width:54em) {
+	nav {
+		order: 0;
+	}
+
+	main section:nth-of-type(2) img{
+		display: block;
+	}
+}
+
+@media (min-width:54em) {
+	header > a:last-of-type,
+	nav a {
+	  flex-direction:row;
+	}
+
+	
+	
+  }
+
+
+
+/* gap tussen de sections check  */
+/* responive our commitments, in articles zetten? */
+/*  tekst bruegr menu kan niet worden gewijzigd check */
+ /* kan ik artcile gebruiken bij footer? om te stijlen check*/
+ /*  list style punten terig op a elememt check is me thuis gelukt */
+
+
+/*  tekst brurger menu kan niet worden gewijzigd zoals de website, svg blijft niet vast */
+ /* hoe kan ik de bullet point stylen? ik probeerde li:marker lukte niet */
+/* responive our commitments, in articles zetten? */
+/* tweede pagina, bij de links bij de carosel, waar moet dat tekentje? */
+/* artcile wel goed op pagina 2? hoe krijg ik ze naast elkaar */
+/* hoe moet ik view more doen? */
