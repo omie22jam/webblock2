@@ -194,7 +194,9 @@ voor responsive media en/of clamp, vw,/ grid, grid-template-columns/
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  - de focus werkt goed
+  - de alt had ik in nederland en ik ga dat aanpassen naar engels
+  - 
 
 </details>
 
