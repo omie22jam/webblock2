@@ -219,6 +219,27 @@ voor responsive media en/of clamp, vw,/ grid, grid-template-columns/
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+Omra:
+- hoe krijg ik de carousel vakjes even groot?
+- Hoe maak ik een border line langer?
+- hoe verwijder ik onnodige witruimte bij de P
+
+Yenthe:
+- hoe gaat het scrollen bij mijn carousel weg? 
+ - Hoe maak ik ruimte aan de linker en rechter kan van de 4 list items (header)? 
+ - Grid in footer werkt niet?
+
+ Arpine:
+  - kan een h3 en img ook als een link gemaakt worden 
+  - hoe doe je het dan positioneren
+
+Laura:
+  - Het verwijderen van een element uit de DOM met js lukt me niet goed om responsive te maken.
+  - Ik heb 2 divs gebruikt voor makkelijke opmaak, hoe kan ik dit op een betere manier doen?
+  - Hoe download ik de svg code naar een img?
+
+
+
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
