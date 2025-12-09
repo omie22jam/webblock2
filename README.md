@@ -67,7 +67,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Weinig witruimte
   - Op kleine schermen is er ook kleine stukken teksten
   - Afbeeldingen hebben geen juiste alt voor de voice overs
-
+  - Ze gebruiken te veel divs
 
 </details>
 
@@ -84,8 +84,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="./readme-images/frame2.png" width="375px" alt="breakdown van een dynamisch deel">
 
-  <!-- ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel"> -->
+Na het eerste groepsgesprek werd mijn html gecontroleerd. Er werd mijn verteldt dat de laatste sectie op mijn eerste pagina veelste lang was en het beter is als ik dat inkort. Dit heb ik ook gedaan. 
+ 
+ nieuwe breakdown schets
+  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -153,7 +155,7 @@ Omra:
 - Kan ik een article in de footer sections zetten?
 - hoe krijg ik de h2 van sectie vier onder de image
 - Op mobile is section vijf een hele blok, maar als je hem groter maakt zijn het      aparte blokken. Moet dit met css worden veranderen of html?
-- Hoe verander je de lettertype van de a in adress, de font is wel geselcteerd met de a maar het wordt niet gewizjigd. (adress weg doen?)
+- Hoe verander je de lettertype van de a in adress, de font is wel geselcteerd met de a maar het wordt niet gewijzigd. (adress weg doen?)
  
  Yenthe:
 - Hoe kunnen mijn afbeeldingen mee schalen zodat ze langer worden in de lengte?
@@ -171,21 +173,18 @@ Arpine:
 - waarom krijgt de grid een extra column erbij als er niks in zit?
  
 
-
+voor responsive media en/of clamp, vw,/ grid, grid-template-columns/ 
+(aantekeing voormijzelf)
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-voor responsive media en/of clamp, vw,/ grid, grid-template-columns/ 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Ik heb geleerd hoe ik de @media nu kan gebruiken (had het gebruikt voor mijn articles.)
+  - Er werd geholpen met de italic font weg te halen. 
+  - Er werd uitgelegd over hoe je twee verschillende foto's van een foto kan gebruiken voor responsive scherm.
 
 </details>
-
-
-
+De picture dat we bij de groepsgesprek besproken hadden heb ik later ook zelf gebruik. bij de response merkte ik dat de fotos niet lekker gaan. Ik zag in de code dat ze allemaal verschillende formaten ftos hadden gebruikt van 1 foto. Ik vroeg Yenthe voor de picture code en zij had me ermee geholpen en verteld dat het in mijn html moest. Ik had helaas geek aantekeingen gemaakt tijdens dat gesprek dus ik ben blij dat Yenthe me ermee heeft kunnen helpen.
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -196,7 +195,7 @@ voor responsive media en/of clamp, vw,/ grid, grid-template-columns/
   ### Bevindingen
   - de focus werkt goed
   - de alt had ik in nederland en ik ga dat aanpassen naar engels
-  - 
+  - Mijn spraak doet het niet?
 
 </details>
 
@@ -207,7 +206,24 @@ voor responsive media en/of clamp, vw,/ grid, grid-template-columns/
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik was uren lang bezog met mijn code maar niks werkte. Het was niet meer draagbaar. Er zat een heel groot gat midden in mijn sectie. Ik kreeg de bovenste lijnen niet goed. De carousel wou niet mooi eruit zien. Alles ging stuk en moest ik dat weer opnieuw fixen. De fotos wouden niet mee responsive veranderen. De hamburger menu wou niet werken op css. al deze dingen wou niet lukken. het toepassen van grid lukte niet, niks ging verplaatsen. Omdat ik hier zolang mee bezg was kon ik niet tijd besteden aan alle andere dingen dat nog moeten gebeuren. Het was een heel frusterende dag. Ik was geen stap verder. 
+
+Mijn spraakfunctie deed het ook niet. Ik zat hele tijd in instellingen te zoeken wat mis ging maar kon niks vinden. 
+
+Eenmaal op school was ik voor het gesprek ook even bezig geweest met coderen. Het ging ietjes beter en dingen lukte. Ik vroeg aan Gloria of zij misschien wist wat het probleem was met mijn code en waarom mijn spraakfunctie niet lukte. Helaas kon zij het ook niet vinden. Daarna ben ik voor hulp naar Roos en Laura gegaan. Roos heeft mijn spraakfunctie weer aan kunnen zetten en het was haar gelukt om iets te laten veranderen met grid. Ze had de display flex naar display grid gezet (Ik had al een display grid maar die flex moest veranderd worden) Ze legde het me een beetje uit van hoe zei hier ermee te werk gaat. Dit had mij heel veel geholpen. Het is mij daarna gelukt om de probleem te vinden waarom mijn grid niet werkte. 
+
+Koste veel tijd om de probleem te zoeken en alles goed zetten
+  <img src="./readme-images/alles.gaat.fout.png" width="375px" alt="H1 vliegt omhoog samen met de tweede section">
+  
+  Zo perfect lukte het mij niet om de header te maken. Ik probeerdere allemaal verschillende dingen maar het lukte niet. ik wou een div gebruiken maar ik wou niet die risico nemen.
+  <img src="./readme-images/header.aircanada.png" width="375px" alt="aircanda header">
+    <img src="./readme-images/mijn.nav.png" width="375px" alt="Mijn nav">
+
+Ik wou de laaste section naast de eerste section doen (sections ozonder divs). Het was gelukt, maar je kon de een na laaste section niet meer op beeld zien. De zwarte achtergrond wou niet op die komen omdat de laatste section erboven is.
+  <img src="./readme-images/footer.responsive.png" width="375px" alt="footer lukt net niet">
+
+
+
 
 
   ### Agenda voor meeting
@@ -238,19 +254,15 @@ Laura:
   - Ik heb 2 divs gebruikt voor makkelijke opmaak, hoe kan ik dit op een betere manier doen?
   - Hoe download ik de svg code naar een img?
 
-
-
-
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+- Voor de carousel hebben ze een link van een website gestuurd, dat mij kan helpen ermee.
+ - De borderline is niet lnager geworden maar er is een standaard zwarte onder erbij gekomen boven op de ene border die ik al heb.
+ - De onnodige witruimte lag niet aan de p, maar een te grote svg. ik heb deze veranderd naar een andere. 
 
 </details>
+In dit gesprek vroeg ik ook hoe ik mijn begin foto's de goeie grote kan geven als ik responsive maak. Ze zaten te twijfelen met wat ik kon doen. Ik zei of ik zonodig de foto ga bewerken en die dan bij @media toevoeg. Ik kon dit gaan proberen. Er was mij ook een link gestuurd voor de fotos maar dat hielp niet. Zoals ik eerder zei had ik de picture element gebruikt die Yenthe ook gebruikte. Dit was de beste optie voor mijn probleem.
 
+  <img src="./readme-images/picture.luktniet.png" width="375px" alt="eerste paar keren bij het gebruiken van picture en nieuwe foto's bij images">
 
 
 
