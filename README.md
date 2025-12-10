@@ -28,8 +28,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Je website
 
 <details open>
@@ -87,7 +85,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 Na het eerste groepsgesprek werd mijn html gecontroleerd. Er werd mijn verteldt dat de laatste sectie op mijn eerste pagina veelste lang was en het beter is als ik dat inkort. Dit heb ik ook gedaan. 
  
  nieuwe breakdown schets
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="./readme-images/breakdownschets.verbeterde.versie.png" width="375px" alt="ingekorte schets van de eerste pagina">
 
 </details>
 
@@ -101,17 +99,29 @@ Na het eerste groepsgesprek werd mijn html gecontroleerd. Er werd mijn verteldt 
   Ik ben begonnen met eerst al mijn html in te vullen in de index.html. Dit ging soepel. Ik heb geen lange teksten maar veel korte paragrafen en veel H (h2, H3, H4). Elke keer had ik steeds de nijging om alvast met mijn css te gaan beginnen. zodra ik begon wist ik niet hoe ik moet beginnen. Het voelt alsof ik een blackout heb, want ik herinner me niks meer van css. Later besef ik me dat niet al mijn Html af is, ik moest de footer en alle img erbij toevoegen. In de les hebben we geoefend met de hamburger menu. ik heb dezelfde code van codepen die we hadden geoefend in mijn eigen code verwerkt (ik had nog geen css of js staan) maar hij doet het niet. En de img van de hamburgermenu  is ook niet meer te zien nadat ik de code had ingevuld.
     <img src="./readme-images/geen.hamburgermenu.te.zien.png" width="375px" alt="hamburgermenu eerste poging niet gelukt">
 
+Ik werd geholpen met grid en het positioneren van mijn footer. voor mijn footer mocht ik 1 div gebruiken. de tekeningen hadden mij veel geholpen. elke keer als ik het even vergat hoe het zat en met grid pakte ik de tkeeningen erbij.
+
+<img src="./readme-images/grid.footer.HEIC" width="375px" alt="footer grid tekening">
+<img src="./readme-images/grid.footer.2.HEIC" width="375px" alt="footer grid tekening">
+<img src="./readme-images/section.grid.HEIC" width="375px" alt="section grid gebruiken">
+
+
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
-
-  | Omra            | Yenthe             |   Arpine             | Laura       |
   
-  Omra: Hoe gebruik je  nth-of-type in de css van de beide schermen
-  Yenthe: Aria labels en custom properties
-  Arpine: Wanneer gebruikje flex en wanneeer grid
+Omra:
+- Hoe gebruik je  nth-of-type in de css van de beide schermen
 
+Yenthe: 
+- Aria labels en custom properties
+
+Arpine: 
+- Wanneer gebruikje flex en wanneeer grid
+
+laura:
+- Niet aanwezig
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -178,21 +188,21 @@ voor responsive media en/of clamp, vw,/ grid, grid-template-columns/
 </details>
 De picture dat we bij de groepsgesprek besproken hadden heb ik later ook zelf gebruik. bij de response merkte ik dat de fotos niet lekker gaan. Ik zag in de code dat ze allemaal verschillende formaten ftos hadden gebruikt van 1 foto. Ik vroeg Yenthe voor de picture code en zij had me ermee geholpen en verteld dat het in mijn html moest. Ik had helaas geek aantekeingen gemaakt tijdens dat gesprek dus ik ben blij dat Yenthe me ermee heeft kunnen helpen.
 
-ik heb een lijst bijgehouden met wat niet lukt en of het daarna wel is gelukt:
+ik heb een lijst bijgehouden de afgelopen weken met wat niet lukt en of het daarna wel is gelukt:
 
 /* gap tussen de sections check  */
-/* responive our commitments, in articles zetten? */
+/* responive our commitments, in articles zetten? check*/
 /*  tekst burger menu kan niet worden gewijzigd check */
 /* kan ik artcile gebruiken bij footer? om te stijlen check*/
 /*  list style punten terug op a elememt check is me thuis gelukt */
 
 
 /*  tekst brurger menu kan niet worden gewijzigd zoals de website, svg blijft niet vast */
-/* hoe kan ik de bullet point stylen? ik probeerde li:marker lukte niet */
-/* responive our commitments, in articles zetten? */
+/* hoe kan ik de bullet point stylen? ik probeerde li:marker lukte niet check */
+/* responive our commitments, in articles zetten?  check*/
 /* tweede pagina, bij de links bij de carosel, waar moet dat tekentje? */
-/* artcile wel goed op pagina 2? hoe krijg ik ze naast elkaar */
-/* hoe moet ik view more doen? */
+/* artcile wel goed op pagina 2? hoe krijg ik ze naast elkaar check*/
+/* hoe moet ik view more doen? check */
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
@@ -206,6 +216,13 @@ ik heb een lijst bijgehouden met wat niet lukt en of het daarna wel is gelukt:
 
 </details>
 
+de website was opzichzelf al best verzorgd en goed gemaakt. wat ik erbij heb toegevoegd is de dark and light modus en een beter lettertype
+
+<img src="./readme-images/wcag.1.HEIC" width="375px" alt="wcag">
+<img src="./readme-images/wcag.2.HEIC" width="375px" alt="wcag">
+<img src="./readme-images/wcag.3.HEIC" width="375px" alt="wcag">
+<img src="./readme-images/wcag.4.HEIC" width="375px" alt="wcag">
+<img src="./readme-images/wcag5.HEIC" width="375px" alt="wcag">
 
 ## Voortgang 3 (week 4)
 
@@ -229,6 +246,8 @@ Koste veel tijd om de probleem te zoeken en alles goed zetten
 Ik wou de laaste section naast de eerste section doen (sections ozonder divs). Het was gelukt, maar je kon de een na laaste section niet meer op beeld zien. De zwarte achtergrond wou niet op die komen omdat de laatste section erboven is.
   <img src="./readme-images/footer.responsive.png" width="375px" alt="footer lukt net niet">
 
+voor de micro interactie heb iik zelf paar dingen geprobeerd, alleen lukte het niet, ik wou een icoon op het scherm toevoegen. ik probeerde een tutorial video onlinen en dat werkte ook niet. ik vroeg chatgpt wat er fout was aan mijn code maar ik kwam daar niet ver mee. uiteindelijk heb ik chatgpt gevraagd voor een code een soort gelijke code. werkte niet. ik paste de code aan en voegde dingen toe in mijn html. niks werkte. ik besloot iets anders te doen dan een laadscherm. iets met de linken voor als je erop klikt. chatgpt gaf mij een code die werkt. ik wijzigde deze aan naar mijn voorkeuren en voegde een twee link erbij zodat er twee werken.
+<img src="./readme-images/chatgpt.2.png" width="375px" alt="micro interactie code">
 
 
   ### Agenda voor meeting
@@ -260,8 +279,6 @@ Laura:
 In dit gesprek vroeg ik ook hoe ik mijn begin foto's de goeie grote kan geven als ik responsive maak. Ze zaten te twijfelen met wat ik kon doen. Ik zei of ik zonodig de foto ga bewerken en die dan bij @media toevoeg. Ik kon dit gaan proberen. Er was mij ook een link gestuurd voor de fotos maar dat hielp niet. Zoals ik eerder zei had ik de picture element gebruikt die Yenthe ook gebruikte. Dit was de beste optie voor mijn probleem.
 
   <img src="./readme-images/picture.luktniet.png" width="375px" alt="eerste paar keren bij het gebruiken van picture en nieuwe foto's bij images">
-
-
 
 
 

@@ -1,27 +1,3 @@
-:root {
-	--white: white;
-	--lightgrey: lightgray;
-	--darkgrey: #4A4F55;
-	--lightblack: #2A2A2A;
-	--black: black;
-	--bg: white;
-	--blue: #005078;
-	--hover: lightskyblue;
-}
-
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--white: black;
-		--blue: darkturquoise;
-		--hover: lightskyblue;
-		--black: white;
-		--lightgrey: lightgray;
-		--darkgrey: #4A4F55;
-		--lightblack: #2A2A2A;
-	}
-}
-
 main svg{
     fill: var(--black);
 }
@@ -307,7 +283,6 @@ main section:nth-of-type(5) ul {
 main section:nth-of-type(5) ul li {
     scroll-snap-align: center;
 }
-
 
 main section:nth-of-type(5) ul {
     padding: 0;
