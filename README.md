@@ -142,14 +142,6 @@ Na het eerste groepsgesprek werd mijn html gecontroleerd. Er werd mijn verteldt 
   voor het gesprek ahd ik de vraag - Hoe verander ik de fonts van een 1 ul/li/ a element en niet van alle andere? Dit is mij gelukt op te lossen voor het gesprek. 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 
 Omra: 
 - Kan ik een article in de footer sections zetten?
@@ -186,6 +178,21 @@ voor responsive media en/of clamp, vw,/ grid, grid-template-columns/
 </details>
 De picture dat we bij de groepsgesprek besproken hadden heb ik later ook zelf gebruik. bij de response merkte ik dat de fotos niet lekker gaan. Ik zag in de code dat ze allemaal verschillende formaten ftos hadden gebruikt van 1 foto. Ik vroeg Yenthe voor de picture code en zij had me ermee geholpen en verteld dat het in mijn html moest. Ik had helaas geek aantekeingen gemaakt tijdens dat gesprek dus ik ben blij dat Yenthe me ermee heeft kunnen helpen.
 
+ik heb een lijst bijgehouden met wat niet lukt en of het daarna wel is gelukt:
+
+/* gap tussen de sections check  */
+/* responive our commitments, in articles zetten? */
+/*  tekst burger menu kan niet worden gewijzigd check */
+/* kan ik artcile gebruiken bij footer? om te stijlen check*/
+/*  list style punten terug op a elememt check is me thuis gelukt */
+
+
+/*  tekst brurger menu kan niet worden gewijzigd zoals de website, svg blijft niet vast */
+/* hoe kan ik de bullet point stylen? ik probeerde li:marker lukte niet */
+/* responive our commitments, in articles zetten? */
+/* tweede pagina, bij de links bij de carosel, waar moet dat tekentje? */
+/* artcile wel goed op pagina 2? hoe krijg ik ze naast elkaar */
+/* hoe moet ik view more doen? */
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
@@ -224,17 +231,7 @@ Ik wou de laaste section naast de eerste section doen (sections ozonder divs). H
 
 
 
-
-
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
 Omra:
 - hoe krijg ik de carousel vakjes even groot?
 - Hoe maak ik een border line langer?
@@ -263,6 +260,7 @@ Laura:
 In dit gesprek vroeg ik ook hoe ik mijn begin foto's de goeie grote kan geven als ik responsive maak. Ze zaten te twijfelen met wat ik kon doen. Ik zei of ik zonodig de foto ga bewerken en die dan bij @media toevoeg. Ik kon dit gaan proberen. Er was mij ook een link gestuurd voor de fotos maar dat hielp niet. Zoals ik eerder zei had ik de picture element gebruikt die Yenthe ook gebruikte. Dit was de beste optie voor mijn probleem.
 
   <img src="./readme-images/picture.luktniet.png" width="375px" alt="eerste paar keren bij het gebruiken van picture en nieuwe foto's bij images">
+
 
 
 

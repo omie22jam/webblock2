@@ -1,221 +1,32 @@
 
-/* 
-body {
-	margin: 0;
-	padding: 0;
-}
+/* section 1 and 2 */
 
-@font-face {
-
-	font-family: opensans-regular;
-	src: url(../fonts/opensans-regular.woff);
-}
-
-@font-face {
-	font-family: opensans-bold;
-	src: url(../fonts/opensans-bold\ .woff);
-} */
-
-html[data-theme='light'] {
-	color-scheme: light;
-}
-
-
-/* body {
-	overflow-x: hidden;
-}
-
-main {
-	display: flex;
-	flex-direction: column;
-	gap: 3em;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-} */
-
-/* 
-h1,
-h2 {
+main section:nth-of-type(2)>li:nth-of-type(1) {
 	font-family: opensans-bold;
 }
 
-p {
-	font-family: opensans-regular;
+main svg {
+	fill: var(--black);
+	stroke: var(--black);
 }
 
-a {
-	color: var(--zwart);
-	text-decoration: none;
-	font-family: opensans-regular;
+main section:nth-of-type(3) ul svg:nth-of-type(1) {
+	fill: none;
 }
 
-li {
-	list-style-type: none;
-}
-
-strong {
-	font-family: opensans-bold;
-
-} */
-
-/* font veranderen */
 article address a {
 	font-family: opensans-regular;
 	text-decoration: none;
 	font-style: normal;
 }
 
-/* 
-section:nth-of-type(1){
-	position:relative;
-} */
-
-/* h1 {
-
-	position: absolute;
-	align-items: center;
-	font-size: 36px;
-	font-weight: 600;
-	letter-spacing: 0.2px;
-}
-
-header {
-	display: flex;
-}
-
-header > a {
-	width: 100%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-} */
-
-/* 
-header img {
-	width: 35%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	
-}
-
-
-header nav button {
-	border: none;
-	padding: 0 0 0 0;
-	background: none;
-	position: sticky;
-	z-index: 12;
-	top: 0;
-}
-
-header nav a {
-	color: var(--white);
-	font-size: x-large;
-} */
-
-
-/* header nav ul {
-	background-color: var(--donkergrijs);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 11;
-	margin: 0;
-
-	translate: -100%;
-
-	padding-top: 3em;
-	padding-left: 0.5em;
-	display: flex;
-	flex-direction: column;
-	gap: 2em;
-
-}
-
-header nav li a {
-	display: inline;
-	color: var(--wit);
-
-}
-
-header nav li {
-	border-bottom: solid var(--lichtzwart);
-}
-
-header nav ul li:nth-of-type(1) {
-	background-color: var(--lichtzwart);
-}
-
-
-header nav ul.is-open {
-	translate: 0%;
-} */
-
-/* @media (min-width:54em) {
-
-	header {
-		display: grid;
-		grid-template-columns: 10fr 10fr 0.5fr;
-		gap: 2em;
-	}
-
-	header nav ul {
-		position: static;
-		translate: none;
-		display: flex;
-		flex-direction: row-reverse;
-		gap: 2em;
-		padding-top: 1em;
-		background-color: var(--white);
-		border-top: solid 3em var(--donkergrijs);
-	}
-
-	header > a {
-		grid-row: 1 / span 2;
-		padding: 1em;
-		border-top: solid 3em var(--donkergrijs);
-	}
-
-	header nav li {
-		display: inline-block;
-		background: none;
-		border-bottom: none;
-	}
-
-	header nav button,
-	header nav li svg {
-		display: none;
-	}
-
-	header nav ul a {
-		color: var(--zwart);
-		font-size: medium;
-	}
-
-	header nav ul a:hover {
-		color: var(--blauw);
-	}
-
-	header nav ul li:nth-of-type(1) {
-		background: none;
-	}
-} */
-
-/* index */
-main > section:nth-of-type(1) {
+main>section:nth-of-type(1) {
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
 }
 
 
-/* index */
 main > section:nth-of-type(1) img {
 	max-width: 100%;
 	display: flex;
@@ -224,15 +35,13 @@ main > section:nth-of-type(1) img {
 	width: 100%;
 }
 
-
-/* eerste section met h1 , index*/
-main > section:nth-of-type(2) p,
-main > ul:nth-of-type(1),
+/* aangepaste code van chatgpt */
+main>section:nth-of-type(2) p,
+main>ul:nth-of-type(1),
 h1 {
 	text-align: center;
 	align-content: center;
-
-	background: white;
+	background-color: var(--white);
 	padding: 2rem 1.5rem;
 	border-radius: 0.6em;
 	width: 70%;
@@ -243,11 +52,11 @@ h1 {
 	z-index: 10;
 }
 
-main > section:nth-of-type(2) p{
+main>section:nth-of-type(2) p {
 	margin-top: -5em;
 }
 
-main section:nth-of-type(2) > ul {
+main section:nth-of-type(2)>ul {
 	display: grid;
 	grid-template-columns: 2fr 2fr 2fr;
 	justify-content: space-evenly;
@@ -256,33 +65,15 @@ main section:nth-of-type(2) > ul {
 	font-weight: bolder;
 }
 
-/* main section:nth-of-type(2) {
-	border-bottom-style: solid;
-	border-width: medium;
-	margin-top: -1em;
-} */
-
-/* main section:nth-of-type(2) a {
-	font-family: opensans-bold;
-	transition: .2s;
-} */
-
-/* main section:nth-of-type(2) a:hover {
-	border-bottom-style: solid;
-	border-width: medium;
-
-} */
-
 @media (min-width:54em) {
-
-	main > section:nth-of-type(2) p,
-	main > ul:nth-of-type(1) {
+	main>section:nth-of-type(2) p,
+	main>ul:nth-of-type(1) {
 		text-align: center;
 		align-content: center;
 		margin-top: 3em;
-		background: white;
+		background-color: var(--white);
 		padding: 1em;
-		border-radius: 20px;
+		border-radius: 1.5em;
 		width: 100%;
 		max-width: 60%;
 		gap: 0;
@@ -306,7 +97,7 @@ main section:nth-of-type(2) > ul {
 	}
 
 	main > section:nth-of-type(2) {
-		background: white;
+		background-color: var(--white);
 		border-radius: 2em;
 		margin-left: 9em;
 		margin-right: 9em;
@@ -315,24 +106,19 @@ main section:nth-of-type(2) > ul {
 
 	}
 
-	main section:nth-of-type(2)>ul li {
+	main section:nth-of-type(2) > ul li {
 		display: grid;
 		grid-template-columns: 2fr 2fr 2fr;
 		justify-content: space-evenly;
-		padding: 1em;
 		padding-top: 2em;
 		font-size: medium;
 		font-weight: bolder;
-		background-color: var(--wit);
 		z-index: 10;
-		margin-top: 0;
 		gap: 0;
 	}
 
 	main section:nth-of-type(2) a {
 		font-family: opensans-bold;
-		/* border-bottom-style: solid;
-        padding-bottom: 1.5em; */
 		border-width: medium;
 		padding-left: 7em;
 		padding-right: 10em;
@@ -340,30 +126,34 @@ main section:nth-of-type(2) > ul {
 
 }
 
-
 main section:nth-of-type(2) a:hover {
-	color: #005078;
+	color: var(--blue);
 }
 
-/* hoe verander ik de lettertype van alleen deze a element */
-main section:nth-of-type(2)>li:nth-of-type(1) {
-	font-family: opensans-bold;
+main > section:nth-of-type(1) li {
+	display: flex;
+	flex-direction: row;
 }
 
-/* de sectie met h1 kan ik niet selecterem, de tweede sectie met h2 wordt mee veranderd */
-/*  heb de eerste foto verlaagd */
+main > section:nth-of-type(2) li {
+	display: flex;
+	flex-direction: row;
+}
 
+main section:nth-of-type(2) img {
+	display: none;
+}
+
+/* section 3 */
 main section:nth-of-type(3) {
-	/* background-color:violet; */
 	border-radius: 2rem;
-	border: 0.020rem var(--lichtzwart);
+	border: 0.020rem var(--lightblack);
 	margin: 1rem;
 	padding: 1rem;
-	box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+	box-shadow: 0.3em 0.3em 0.9em 0.1em var(--lightgrey);
 }
 
 main section:nth-of-type(3) svg {
-	/* width: 10em; */
 	padding-right: 1em;
 }
 
@@ -372,7 +162,7 @@ main > section:nth-of-type(3) li {
 	flex-direction: row;
 }
 
-main > section:nth-of-type(3) img:nth-of-type(1) {
+main>section:nth-of-type(3) img:nth-of-type(1) {
 	width: 10em;
 }
 
@@ -404,74 +194,20 @@ main > section:nth-of-type(3) img:nth-of-type(1) {
 	}
 
 	main section:nth-of-type(3) svg {
-		/* width: 10em; */
 		padding: 0;
 	}
-
-
-	/* section:nth-of-type(3) li > p:nth-of-type(1){
-        scroll-snap-type: ;
-     } */
-
-
-
 }
 
-
-
-
-
-
-
-
-
-main > section:nth-of-type(1) li {
-	display: flex;
-	flex-direction: row;
-}
-
-main > section:nth-of-type(2) li {
-	display: flex;
-	flex-direction: row;
-}
-
-
-
-main section:nth-of-type(2) img {
-	display: none;
-}
-
-
-
-/* 
-img p :nth-of-type(3){
-	display: flex;
-	justify-content: space-around;
-    padding: 1em;
-    background-color: blueviolet;
- } */
-
-
-
-
-
-
-/* main section:nth-of-type(4) > h2,
-main section:nth-of-type(4) > img{
-	display: flex;
-	flex-direction: column
-} */
+/* section 4 */
 
 main section:nth-of-type(4) {
-	/* background-color: chocolate; */
 	border-radius: 2rem;
-	border: 0.020rem var(--lichtzwart);
+	border: 0.020rem var(--lightblack);
 	margin: 1rem;
-	box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+	box-shadow: 0.3em 0.3em 0.9em 0.1emvar(--lightgrey);
 	display: grid;
 	flex-direction: column;
 	overflow: hidden;
-	/* padding: 1em; */
 }
 
 main section:nth-of-type(4) h2,
@@ -483,9 +219,8 @@ main section:nth-of-type(4) a {
 main section:nth-of-type(4) a {
 	display: inline-block;
 	margin: 0 1rem 0.5rem 1rem;
-	color: var(--blauw);
+	color: var(--blue);
 }
-
 
 main section:nth-of-type(4) img {
 	order: -1;
@@ -493,12 +228,10 @@ main section:nth-of-type(4) img {
 	display: block;
 	width: 100%;
 	height: auto;
-
 }
 
-main section:nth-of-type(4) > ul {
+main section:nth-of-type(4)>ul {
 	display: grid;
-	/* flex-direction: column; */
 	font-size: medium;
 	gap: 10%;
 	margin-left: -2em;
@@ -516,18 +249,15 @@ section:nth-of-type(4) button {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	border-radius: 0.9em;
-	background-color: #005078;
+	background-color: var(--blue);
 	cursor: pointer;
 	margin-left: -0.2em;
 	font-size: small;
-
 	display: inline-block;
 	width: auto;
 	margin-right: 8em;
 	margin-left: 1em;
 	margin-bottom: 1em;
-	/* padding-left: 0;
-    padding-right: 0; */
 }
 
 section:nth-of-type(4) button:hover {
@@ -536,30 +266,27 @@ section:nth-of-type(4) button:hover {
 }
 
 section:nth-of-type(4) button:focus-visible {
-	box-shadow: 1 var(--zwart);
+	box-shadow: 1 var(--black);
 	translate: 0 -.5em;
 	outline: none;
 }
 
 section:nth-of-type(4) button:active {
-	background-color: var(--lichtgrijs);
+	background-color: var(--lightgrey);
 	box-shadow: none;
 	translate: 0 0;
 }
-
 
 [aria-label="drukknop"] button:active {
-	background-color: white;
+	background-color: var(--white);
 	box-shadow: none;
 	translate: 0 0;
 }
-
 
 @media (min-width:54em) {
 	section:nth-of-type(4) {
 		display: grid;
 		grid-template-columns: 1fr 2fr;
-		/* grid-template-rows: auto 1fr auto; */
 		align-items: start;
 		gap: 0;
 		overflow: hidden;
@@ -583,7 +310,6 @@ section:nth-of-type(4) button:active {
 		display: block;
 		grid-column-start: 2;
 		grid-column-end: 4;
-
 	}
 
 	main section:nth-of-type(4) p {
@@ -598,11 +324,9 @@ section:nth-of-type(4) button:active {
 	main section:nth-of-type(4) ul {
 		grid-column: 2;
 		grid-row: 4 / span 4;
-		/* margin: 0em; */
 		display: flex;
 		flex-direction: row;
 		margin-left: 8em;
-
 	}
 
 	main section:nth-of-type(4) button {
@@ -615,18 +339,13 @@ section:nth-of-type(4) button:active {
 	section:nth-of-type(4) svg {
 		width: 10%;
 	}
-
 }
 
-
-
-
-
+/* section 5 */
 
 section:nth-of-type(5) h2 {
 	font-size: medium;
 	margin-left: 2em;
-
 }
 
 section:nth-of-type(5)>p {
@@ -634,31 +353,37 @@ section:nth-of-type(5)>p {
 	margin-left: 2em;
 }
 
-section:nth-of-type(5) > ul:nth-of-type(1) {
+section:nth-of-type(5)>ul:nth-of-type(1) {
 	font-size: small;
 }
 
-section:nth-of-type(5) > ul:nth-of-type(1)>li {
+section:nth-of-type(5)>ul:nth-of-type(1)>li {
 	display: list-item;
 	list-style-type: disc;
 	line-height: 2em;
 }
 
-section:nth-of-type(5) p > a {
-	color: var(--blauw);
-	text-decoration: underline var(--blauw);
+section:nth-of-type(5) p>a {
+	color: var(--blue);
+	text-decoration: underline var(--blue);
 }
 
 section:nth-of-type(5) li:nth-of-type(1) a {
-	color: var(--blauw);
+	color: var(--blue);
 	font-family: opensans-bold;
 	font-size: small;
 }
 
 section:nth-of-type(5) li:nth-of-type(2) a {
-	color: var(--blauw);
+	color: var(--blue);
 	font-family: opensans-bold;
 	font-size: small;
+}
+
+section:nth-of-type(5) article li:nth-of-type(2),
+section:nth-of-type(5) article li:nth-of-type(3),
+section:nth-of-type(5) article li:nth-of-type(4) {
+	border-top: solid var(--lightgrey);
 }
 
 section:nth-of-type(5) h3 {
@@ -670,17 +395,14 @@ section:nth-of-type(5) h3 svg {
 	width: 1.5em;
 }
 
-section:nth-of-type(5) > ul:nth-of-type(2) {
-	/* background-color:violet; */
+section:nth-of-type(5)>ul:nth-of-type(2) {
 	border-radius: 1rem;
-	border: 0.020rem var(--lichtzwart);
+	border: 0.020rem var(--lightblack);
 	margin: 1rem;
 	padding: 1rem;
-	/* gap: 2em; */
-	box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+	box-shadow: 0.3em 0.3em 0.9em 0.1em var(--lightgrey);
 	font-family: opensans-regular;
 }
-
 
 @media(min-width:48em) {
 
@@ -693,14 +415,13 @@ section:nth-of-type(5) > ul:nth-of-type(2) {
 		flex-direction: column;
 	}
 
-	section:nth-of-type(5) > ul:nth-of-type(2) > li > a {
+	section:nth-of-type(5)>ul:nth-of-type(2)>li>a {
 		padding: 0;
 		border-radius: 0;
 		box-shadow: none;
-		/* margin: none; */
 	}
 
-	section:nth-of-type(5) > ul {
+	section:nth-of-type(5)>ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 2em;
@@ -708,15 +429,15 @@ section:nth-of-type(5) > ul:nth-of-type(2) {
 		border: none;
 	}
 
-	section:nth-of-type(5) ul:nth-of-type(2) > li {
+	section:nth-of-type(5) ul:nth-of-type(2)>li {
 		border-radius: 2rem;
 		border: 0.020rem gray;
 		margin: 2rem;
 		padding: 1rem;
-		box-shadow: 1px 1px 20px 2px gray;
+		box-shadow: 0.3em 0.3em 0.9em 0.1em gray;
 	}
 
-	section:nth-of-type(5) > ul:nth-of-type(2) {
+	section:nth-of-type(5)>ul:nth-of-type(2) {
 		border-radius: 0;
 		border: 0;
 		margin: 0;
@@ -725,9 +446,7 @@ section:nth-of-type(5) > ul:nth-of-type(2) {
 		font-family: opensans-regular;
 		background: none;
 	}
-
 }
-
 
 section:nth-of-type(5) h3 {
 	display: flex;
@@ -737,58 +456,3 @@ section:nth-of-type(5) h3 {
 section:nth-of-type(5) h3 svg {
 	width: 1.5em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:54em) {
-	nav {
-		order: 0;
-	}
-
-	main section:nth-of-type(2) img {
-		display: block;
-	}
-}
-
-@media (min-width:54em) {
-
-	header>a:last-of-type,
-	nav a {
-		flex-direction: row;
-	}
-
-
-
-}
-
-
-
-/* gap tussen de sections check  */
-/* responive our commitments, in articles zetten? */
-/*  tekst bruegr menu kan niet worden gewijzigd check */
-/* kan ik artcile gebruiken bij footer? om te stijlen check*/
-/*  list style punten terig op a elememt check is me thuis gelukt */
-
-
-/*  tekst brurger menu kan niet worden gewijzigd zoals de website, svg blijft niet vast */
-/* hoe kan ik de bullet point stylen? ik probeerde li:marker lukte niet */
-/* responive our commitments, in articles zetten? */
-/* tweede pagina, bij de links bij de carosel, waar moet dat tekentje? */
-/* artcile wel goed op pagina 2? hoe krijg ik ze naast elkaar */
-/* hoe moet ik view more doen? */

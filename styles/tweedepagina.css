@@ -1,15 +1,32 @@
-
-
-h1 {
-    position: absolute;
-    font-family: opensans-regular;
-    align-items: center;
-    font-size: 36px;
-    font-weight: 600;
-    letter-spacing: 0.2px;
+:root {
+	--white: white;
+	--lightgrey: lightgray;
+	--darkgrey: #4A4F55;
+	--lightblack: #2A2A2A;
+	--black: black;
+	--bg: white;
+	--blue: #005078;
+	--hover: lightskyblue;
 }
 
-main>section:nth-of-type(1) {
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--white: black;
+		--blue: darkturquoise;
+		--hover: lightskyblue;
+		--black: white;
+		--lightgrey: lightgray;
+		--darkgrey: #4A4F55;
+		--lightblack: #2A2A2A;
+	}
+}
+
+main svg{
+    fill: var(--black);
+}
+
+main > section:nth-of-type(1) {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
@@ -21,63 +38,28 @@ main section:nth-of-type(2) {
     margin-top: -1em;
 }
 
-
-/* tweedep */
-/* main > section:nth-of-type(2) p,
-main > ul:nth-of-type(1),
-h1 {
-	text-align: center;
-	align-content: center;
-
-	background: white;
-	padding: 2rem 1.5rem;
-	border-radius: 0.6em;
-	width: 80%;
-	max-width: 25em;
-
-	margin-top: -2.5em;
-	position: relative;
-	z-index: 10;
-} */
-main > section:nth-of-type(2) p,
-main > ul:nth-of-type(1),
-h1 {
-	text-align: center;
-	align-content: center;
-
-	background: white;
-	padding: 2rem 1.5rem;
-	border-radius: 0.6em;
-	width: 70%;
-	max-width: 25em;
-
-	margin-top: -1.5em;
-	position: relative;
-	z-index: 10;
+main svg{
+   stroke: var(--blue);
 }
 
 main > section:nth-of-type(2) p{
 	margin-top: -5em;
 }
 
-/* main>section:nth-of-type(2) p {
-    padding-left: 0.5em;
-} */
-
-/* tweede svg nav */
 section:nth-of-type(2) > ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
-    padding: 1em;
     font-size: smaller;
     font-weight: bolder;
+    gap: 5em;
 }
 
 section:nth-of-type(2) > ul li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 1em;
 
 }
 
@@ -86,27 +68,21 @@ main section:nth-of-type(2) a {
 }
 
 main section:nth-of-type(2) a:hover {
-    color: #005078;
+    color: var(--blue);
 }
-
-
 
 main section:nth-of-type(1) img {
     width: 100%;
 }
 
-/* picture elemten boven de h2 zetten*/
+/* section 3 */
+/* img elemten boven de h2 zetten*/
 main section:nth-of-type(3) img {
     width: 100%;
     order: -1;
     object-fit: cover;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
-
-}
-
-main section:nth-of-type(3) picture {
-    order: -1;
 }
 
 main section:nth-of-type(3) {
@@ -114,10 +90,10 @@ main section:nth-of-type(3) {
     display: grid;
     flex-direction: column;
     border-radius: 1rem;
-    border: 0.020rem var(--lichtzwart);
+    border: 0.020rem var(--black);
     margin: 1rem;
     padding: 0rem;
-    box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+    box-shadow: 0.3em 0.3em 0.9em 0.1em var(--lightgrey);
 }
 
 main section:nth-of-type(3) h2,
@@ -131,7 +107,7 @@ main section:nth-of-type(3) button {
 
 main section:nth-of-type(3) button a {
     font-family: opensans-bold;
-    color: white;
+    color: var(--white);
 }
 
 section:nth-of-type(3) button {
@@ -141,7 +117,7 @@ section:nth-of-type(3) button {
     padding-top: 1rem;
     padding-bottom: 1rem;
     border-radius: 0.9em;
-    background-color: #005078;
+    background-color: var(--blue);
     cursor: pointer;
     margin-left: -0.2em;
     font-size: small;
@@ -151,8 +127,6 @@ section:nth-of-type(3) button {
     margin-right: 8em;
     margin-left: 1em;
     margin-bottom: 1em;
-    /* padding-left: 0;
-    padding-right: 0; */
 }
 
 section:nth-of-type(3) button:hover {
@@ -161,20 +135,20 @@ section:nth-of-type(3) button:hover {
 }
 
 section:nth-of-type(3) button:focus-visible {
-    box-shadow: 1rem var(--zwart);
+    box-shadow: 1rem var(--black);
     translate: 0 -.5em;
     outline: none;
 }
 
 section:nth-of-type(3) button:active {
-    background-color: var(--lichtgrijs);
+    background-color: var(--lightgrey);
     box-shadow: none;
     translate: 0 0;
 }
 
 
 [aria-label="drukknop"] button:active {
-    background-color: white;
+    background-color: var(--white);
     box-shadow: none;
     translate: 0 0;
 }
@@ -183,7 +157,6 @@ section:nth-of-type(3) button:active {
     section:nth-of-type(3) {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        /* grid-template-rows: auto 1fr auto; */
         align-items: start;
         gap: 0;
         padding: 1em;
@@ -195,7 +168,6 @@ section:nth-of-type(3) button:active {
     section:nth-of-type(3) img {
         display: block;
         width: 20em;
-        /* height: auto; */
         grid-row: 1 / span 3;
         grid-row-start: 1;
         order: 0;
@@ -225,11 +197,7 @@ section:nth-of-type(3) button:active {
     }
 }
 
-
-
-
-
-
+/* section 4 */
 main section:nth-of-type(4){
     padding: 1em;
     display: grid;
@@ -276,7 +244,6 @@ main section:nth-of-type(4) img{
     main section:nth-of-type(4) li a{
         display: block;
         grid-column-start: 1;
-        /* grid-row: 1; */
     }
 
     main section:nth-of-type(4) h2{
@@ -289,33 +256,22 @@ main section:nth-of-type(4) img{
     }
 }
 
-
-
-
-
-
-
-
-
+/* section 5 */
 article {
-    /* font-size: small; */
     display: flex;
     flex-direction: column;
     border: solid black;
     border-radius: 1rem;
-    border: 0.020rem var(--lichtzwart);
+    border: 0.020rem var(--lightblack);
     margin: 1rem;
     padding: 0em;
-    box-shadow: 1px 1px 20px 2px var(--lichtgrijs);
+    box-shadow: 0.3em 0.3em 0.9em 0.1em  var(--lightgrey);
     display: flex;
     flex-direction: column;
-    /* line-height: 1.2; */
     font-size: 0.75rem;
     box-sizing: border-box;
     overflow: hidden;
-
 }
-
 
 article img {
     width: 20em;
@@ -331,7 +287,6 @@ article p,
 article li {
     padding-left: 0.5em;
     padding-right: 0.5em;
-    /* padding: auto; */
 }
 
 article li {
@@ -340,8 +295,6 @@ article li {
 
 main section:nth-of-type(5) ul {
     padding: 0;
-    /* flex-shrink: 0;
-    flex-basis: 100%; */
     display: flex;
     overflow: scroll;
     gap: 1rem;
@@ -358,8 +311,6 @@ main section:nth-of-type(5) ul li {
 
 main section:nth-of-type(5) ul {
     padding: 0;
-    /* display: flex;
-    flex-direction: column; */
     display: flex;
     overflow: scroll;
     scroll-snap-type: x-mandotary;
@@ -367,37 +318,9 @@ main section:nth-of-type(5) ul {
     overscroll-behavior: contain;
 }
 
-
 @media (min-width:54em) {
     main section:nth-of-type(5){
         margin-left: 6em;
         padding: 0em;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:54em) {
-	nav {
-		order: 0;
-	}
-
-	main section:nth-of-type(2) img{
-		display: block;
-	}
-}
-
-@media (min-width:54em) {
-	header > a:last-of-type,
-	nav a {
-	  flex-direction:row;
-	}
 }

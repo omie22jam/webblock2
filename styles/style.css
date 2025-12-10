@@ -1,10 +1,22 @@
 :root {
-	--wit: white;
-	--lichtgrijs: lightgray;
-	--donkergrijs: #4A4F55;
-	--lichtzwart: #2A2A2A;
-	--zwart: black;
-	--blauw: #005078
+	--white: white;
+	--lightgrey: lightgray;
+	--darkgrey: #4A4F55;
+	--lightblack: #2A2A2A;
+	--black: black;
+	--bg: white;
+	--blue: #005078;
+	--hover: lightskyblue;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--white: black;
+		--text: white;
+		--blue: darkturquoise;
+		--hover: lightskyblue;
+		--black: white;
+	}
 }
 
 .visually-hidden {
@@ -47,8 +59,9 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
-h1,
+h1{
+	font-family: opensans-regular;
+}
 h2 {
 	font-family: opensans-bold;
 }
@@ -58,7 +71,7 @@ p {
 }
 
 a {
-	color: var(--zwart);
+	color: var(--black);
 	text-decoration: none;
 	font-family: opensans-regular;
 }
@@ -72,13 +85,42 @@ strong {
 
 }
 
-h1 {
+/* kon img niet veranderen naar een andere, code van chatgpt filter: invert(1) brightness(2)*/
+@media (prefers-color-scheme: dark) {
+	header img{
+		filter: invert(1) brightness(2);
+	}
+}
 
-	position: absolute;
-	align-items: center;
-	font-size: 36px;
-	font-weight: 600;
-	letter-spacing: 0.2px;
+header > li svg{
+	fill: var(--black);
+}
+
+nav button svg{
+	stroke: var(--black);
+}
+
+nav ul svg{
+	stroke: var(--black);
+}
+
+body {
+	background-color: var(--white);
+	color: var(--black);
+}
+
+footer svg{
+	fill: var(--white);
+	stroke: var(--white);
+}
+
+footer li:nth-of-type(3) svg {
+	fill: none;
+	stroke: var(--white);
+	
+}
+footer p{
+	color: var(--white);
 }
 
 header {
@@ -99,7 +141,6 @@ header img {
 	margin-right: auto;
 }
 
-
 header nav button {
 	border: none;
 	padding: 0 0 0 0;
@@ -115,7 +156,7 @@ header nav a {
 }
 
 header nav ul {
-	background-color: var(--donkergrijs);
+	background-color: var(--darkgrey);
 	position: fixed;
 	top: 0;
 	bottom: 0;
@@ -136,24 +177,36 @@ header nav ul {
 
 header nav li a {
 	display: inline;
-	color: var(--wit);
+	color: var(--white);
 
 }
 
 header nav li {
-	border-bottom: solid var(--lichtzwart);
+	border-bottom: solid var(--lightblack);
 }
 
 header nav ul li:nth-of-type(1) {
-	background-color: var(--lichtzwart);
+	background-color: var(--lightblack);
 }
-
 
 header nav ul.is-open {
 	translate: 0%;
 }
 
 @media (min-width:54em) {
+
+	nav {
+		order: 0;
+	}
+
+	header > a:last-of-type,
+	nav a {
+		flex-direction: row;
+	}
+
+	main section:nth-of-type(2) img {
+		display: block;
+	}
 
 	header {
 		display: grid;
@@ -169,13 +222,13 @@ header nav ul.is-open {
 		gap: 2em;
 		padding-top: 1em;
 		background-color: var(--white);
-		border-top: solid 3em var(--donkergrijs);
+		border-top: solid 3em var(--darkgrey);
 	}
 
 	header > a {
 		grid-row: 1 / span 2;
 		padding: 1em;
-		border-top: solid 3em var(--donkergrijs);
+		border-top: solid 3em var(--darkgrey);
 	}
 
 	header nav li {
@@ -190,17 +243,53 @@ header nav ul.is-open {
 	}
 
 	header nav ul a {
-		color: var(--zwart);
+		color: var(--black);
 		font-size: medium;
 	}
 
 	header nav ul a:hover {
-		color: var(--blauw);
+		color: var(--blue);
 	}
 
 	header nav ul li:nth-of-type(1) {
 		background: none;
 	}
+}
+
+h1 {
+	position: absolute;
+	align-items: center;
+	font-size: 2.5em;
+	font-weight: 600;
+}
+
+/* aangepaste code van chatgpt */
+/* .hero h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 20px;
+    max-width: 90%;
+    margin: -60px auto 0 auto;
+    position: relative;
+    z-index: 10;
+} */
+	
+main > section:nth-of-type(2) p,
+main > ul:nth-of-type(1),
+h1 {
+	text-align: center;
+	align-content: center;
+	background-color: var(--white);
+	padding: 2rem 1.5rem;
+	border-radius: 0.6em;
+	width: 70%;
+	max-width: 25em;
+	margin-top: -1.5em;
+	position: relative;
+	z-index: 10;
 }
 
 main > section:nth-of-type(2) p {
@@ -221,23 +310,16 @@ main section:nth-of-type(2) a {
 }
 
 main section:nth-of-type(2) a:hover{
-	border-bottom-style: solid var(--blauw);
+	border-bottom-style: solid var(--blue);
 	border-width: medium;
 }
-
-
-
-
-
-
-
 
 footer h2 {
 	font-size: medium;
 }
 
 footer {
-	background-color: black;
+	background-color: var(--black);
 	width: 100%;
 	margin-top: 2em;
 }
@@ -245,7 +327,7 @@ footer {
 footer h2,
 footer a,
 footer p {
-	color: white;
+	color: var(--white);
 }
 
 div {
@@ -257,14 +339,13 @@ div {
 	margin-bottom: 1em;
 }
 
-
 div ul {
 	padding: 0;
 	margin: auto;
 }
 
 div h2 {
-	border-bottom: solid 0.01em var(--lichtgrijs);
+	border-bottom: solid 0.01em var(--lightgrey);
 }
 
 div section:nth-of-type(1) {
@@ -302,7 +383,7 @@ footer > section:nth-of-type(2) ul li{
 footer > section:nth-of-type(2) li:nth-of-type(1),
 footer > section:nth-of-type(2) li:nth-of-type(2){
 	padding-right: 0.5em;
-	border-right: solid var(--wit);
+	border-right: solid var(--white);
 }
 
 footer > section:nth-of-type(2){
@@ -314,7 +395,6 @@ footer > ul:nth-of-type(2) {
 	display: flex;
 	justify-content: center;
 	flex-direction: row;
-	/* gap: 2em; */
 }
 
 footer > section:nth-of-type(3){
@@ -329,7 +409,7 @@ footer > section:nth-of-type(3) ul{
 	div {
 		display: flex;
 		flex-direction: row;
-		background-color: var(--lichtzwart);
+		background-color: var(--lightblack);
 		padding: 3em;
 		justify-content: space-evenly;
 	}
@@ -342,7 +422,6 @@ footer > section:nth-of-type(3) ul{
 	footer section img {
 		width: 5em;
 	}
-
 
 	footer > section:nth-of-type(1) {
 		display: flex;
