@@ -204,7 +204,7 @@ main section:nth-of-type(4) {
 	border-radius: 2rem;
 	border: 0.020rem var(--lightblack);
 	margin: 1rem;
-	box-shadow: 0.3em 0.3em 0.9em 0.1emvar(--lightgrey);
+	box-shadow: 0.3em 0.3em 0.9em 0.1em var(--lightgrey);
 	display: grid;
 	flex-direction: column;
 	overflow: hidden;
@@ -239,7 +239,7 @@ main section:nth-of-type(4)>ul {
 
 main section:nth-of-type(4) button a {
 	font-family: opensans-bold;
-	color: white;
+	color: var(--white);
 }
 
 section:nth-of-type(4) button {

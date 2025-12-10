@@ -65,6 +65,7 @@ section:nth-of-type(2) > ul li a {
 
 main section:nth-of-type(2) a {
     font-family: opensans-bold;
+    transition: .2s;
 }
 
 main section:nth-of-type(2) a:hover {
@@ -130,12 +131,11 @@ section:nth-of-type(3) button {
 }
 
 section:nth-of-type(3) button:hover {
-    box-shadow: 0.05 var(--white);
+    box-shadow: 0.05em var(--white);
     translate: 0 .5em;
 }
 
 section:nth-of-type(3) button:focus-visible {
-    box-shadow: 1rem var(--black);
     translate: 0 -.5em;
     outline: none;
 }
@@ -260,7 +260,7 @@ main section:nth-of-type(4) img{
 article {
     display: flex;
     flex-direction: column;
-    border: solid black;
+    border: solid var(--black);
     border-radius: 1rem;
     border: 0.020rem var(--lightblack);
     margin: 1rem;
@@ -298,7 +298,7 @@ main section:nth-of-type(5) ul {
     display: flex;
     overflow: scroll;
     gap: 1rem;
-    scroll-snap-type: x-mandatory;
+    scroll-snap-type: mandatory;
     scroll-behavior: smooth;
     overscroll-behavior: contain;
     width: 100%;
@@ -313,7 +313,7 @@ main section:nth-of-type(5) ul {
     padding: 0;
     display: flex;
     overflow: scroll;
-    scroll-snap-type: x-mandotary;
+    scroll-snap-type:mandotary;
     scroll-behavior: smooth;
     overscroll-behavior: contain;
 }

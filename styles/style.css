@@ -7,6 +7,9 @@
 	--bg: white;
 	--blue: #005078;
 	--hover: lightskyblue;
+	--footertext:white;
+	--footerbg: black;
+	--footergray:lightgray;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +19,10 @@
 		--blue: darkturquoise;
 		--hover: lightskyblue;
 		--black: white;
+		--lightblack: lightgray;
+		--footertext:white;
+		--footerbg: black;
+		--footergray: #2A2A2A;
 	}
 }
 
@@ -110,13 +117,13 @@ body {
 }
 
 footer svg{
-	fill: var(--white);
-	stroke: var(--white);
+	fill: var(--footertext);
+	stroke: var(--footertext);
 }
 
 footer li:nth-of-type(3) svg {
 	fill: none;
-	stroke: var(--white);
+	stroke: var(--footertext);
 	
 }
 footer p{
@@ -310,7 +317,7 @@ main section:nth-of-type(2) a {
 }
 
 main section:nth-of-type(2) a:hover{
-	border-bottom-style: solid var(--blue);
+	border-bottom: solid var(--blue);
 	border-width: medium;
 }
 
@@ -319,7 +326,7 @@ footer h2 {
 }
 
 footer {
-	background-color: var(--black);
+	background-color: var(--footerbg);
 	width: 100%;
 	margin-top: 2em;
 }
@@ -327,7 +334,7 @@ footer {
 footer h2,
 footer a,
 footer p {
-	color: var(--white);
+	color: var(--footertext);
 }
 
 div {
@@ -409,7 +416,7 @@ footer > section:nth-of-type(3) ul{
 	div {
 		display: flex;
 		flex-direction: row;
-		background-color: var(--lightblack);
+		background-color: var(--footergray);
 		padding: 3em;
 		justify-content: space-evenly;
 	}
