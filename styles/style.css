@@ -9,7 +9,7 @@
 	--hover: lightskyblue;
 	--footertext:white;
 	--footerbg: black;
-	--footergray:lightgray;
+	--footergray:#4A4F55;
 }
 
 @media (prefers-color-scheme: dark) {
