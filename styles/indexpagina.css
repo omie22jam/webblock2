@@ -1,3 +1,30 @@
+:root {
+	--white: white;
+	--lightgrey: lightgray;
+	--darkgrey: #4A4F55;
+	--lightblack: #2A2A2A;
+	--black: black;
+	--bg: white;
+	--blue: #005078;
+	--hover: lightskyblue;
+	--footertext:white;
+	--footerbg: black;
+	--footergray:#4A4F55;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--white: black;
+		--text: white;
+		--blue: darkturquoise;
+		--hover: lightskyblue;
+		--black: white;
+		--lightblack: lightgray;
+		--footertext:white;
+		--footerbg: black;
+		--footergray: #2A2A2A;
+	}
+}
 /* section 1 and 2 */
 main section:nth-of-type(2)>li:nth-of-type(1) {
 	font-family: opensans-bold;

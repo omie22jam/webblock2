@@ -288,22 +288,18 @@ In dit gesprek vroeg ik ook hoe ik mijn begin foto's de goeie grote kan geven al
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
-
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Het toevoegen van grid en het gebruiken van custom properties waren nieuwe dingen die ik heb geleerd. allebei waren heel erg handig en fijn om te gebruiken. ik wil in de toekoemst dit vaker gebruiker en beter in worden
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  de micro interactie was lastig. het bleef maar niet lukken op javascript. de hamburger menu deed ik heel lang over omdat die ook elke keer niet werkte. Grid blijft nog steeds lastig. het is een fijne methode maar ik moet nog veel ermee oefenen. het ging lastig om ze precies te gebruiken zoals op de originele website
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="./readme-images/grid.doethetniet.png" width="375px" alt="grid">
 </details>
-
-
 
 
 
@@ -316,8 +312,8 @@ In dit gesprek vroeg ik ook hoe ik mijn begin foto's de goeie grote kan geven al
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. chatgpt
+  2. https://youtu.be/lwbh6TesXMU?si=Tfz_pdo1AuIlYnUR ( voor javascript micro interactie)
+  3. 
 
 </details>
