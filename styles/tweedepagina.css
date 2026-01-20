@@ -98,6 +98,7 @@ main section:nth-of-type(1) img {
 /* img elemten boven de h2 zetten*/
 main section:nth-of-type(3) img {
     width: 100%;
+    height: 100%;
     order: -1;
     object-fit: cover;
     border-top-left-radius: 1em;
@@ -110,7 +111,7 @@ main section:nth-of-type(3) {
     flex-direction: column;
     border-radius: 1rem;
     border: 0.020rem var(--black);
-    margin: 1rem;
+    /* margin: 1rem; */
     /* padding: 0rem; */
     box-shadow: 0.3em 0.3em 0.9em 0.1em var(--lightgrey);
 }
@@ -146,7 +147,7 @@ section:nth-of-type(3) > a {
     width: auto;
     /* margin-right: 8em; */
     /* margin-left: 1em; */
-    /* margin-bottom: 1em; */
+    margin-bottom: 1rem;
 }
 
 section:nth-of-type(3) > a:hover {
@@ -184,13 +185,13 @@ section:nth-of-type(3) > a:active {
         /* padding: 1em; */
     }
 
-    section:nth-of-type(3) img {
+    main section:nth-of-type(3) img {
         display: block;
-        width: 20em;
+        /* width: 20rem; */
         grid-row: 1 / span 3;
         grid-row-start: 1;
         order: 0;
-        object-fit: none;
+        /* object-fit: none; */
         padding: 1em;
     }
 
@@ -199,19 +200,19 @@ section:nth-of-type(3) > a:active {
     main section:nth-of-type(3) a {
         display: block;
         grid-column-start: 2;
-        margin-left: 2em;
+        margin-left: 0rem;
     }
 
     main section:nth-of-type(3) h2 {
         font-size: x-large;
         padding: 0em;
-        margin-left: 1.5em;
+        margin-left: 0rem;
     }
 
     main section:nth-of-type(3) > a {
         padding-left: 1em;
         padding-right: 3em;
-        margin-left: 3em;
+        margin-left: 0rem;
         margin-right: auto;
     }
 }

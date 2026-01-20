@@ -60,11 +60,11 @@ body {
 	overflow-x: hidden;
 }
 
-main {
+/* main {
 	display: flex;
 	flex-direction: column;
 	gap: 3em;
-}
+} */
 
 h1{
 	font-family: opensans-regular;
