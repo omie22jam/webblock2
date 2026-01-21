@@ -32,6 +32,12 @@
     }
 } */
 
+
+
+body main{
+    gap: 30em;
+}
+
 main svg{
     fill: var(--black);
 }
@@ -56,7 +62,7 @@ main > section:nth-of-type(2) p{
 	margin-top: -5em;
 }
 
-section:nth-of-type(2) > ul {
+main section:nth-of-type(2) > ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-around;
@@ -174,7 +180,7 @@ section:nth-of-type(3) > a:active {
 }
 
 @media (min-width:54em) {
-    section:nth-of-type(3) {
+    main section:nth-of-type(3) {
         display: grid;
         grid-template-columns: 1fr 2fr;
         align-items: start;
@@ -209,12 +215,12 @@ section:nth-of-type(3) > a:active {
         margin-left: 0rem;
     }
 
-    main section:nth-of-type(3) > a {
+    /* main section:nth-of-type(3) > a {
         padding-left: 1em;
         padding-right: 3em;
         margin-left: 0rem;
         margin-right: auto;
-    }
+    } */
 }
 
 /* section 4 */
@@ -315,32 +321,53 @@ article li {
 } */
 
 main section:nth-of-type(5) ul {
-    /* padding: 0; */
     display: flex;
-    overflow: scroll;
+    overflow-y: scroll;
     gap: 2em;
+    padding: 0rem;
     scroll-snap-type:x mandatory;
     scroll-behavior: smooth;
-    overscroll-behavior: contain;
+    overscroll-behavior-x: contain;
     width: 100%;
     overflow-y: scroll;
-
-
-    
+    overscroll-behavior-y: auto;  
 }
 
+h3{
+	font-family: opensans-bold;
+}
+
+/* main section:nth-of-type(5) ul li article a {
+    margin-top: auto;
+} */
+/* 
 main section:nth-of-type(5) ul li {
     scroll-snap-align: center;
 }
 
+main section:nth-of-type(5) li {
+    scroll-snap-align: center;
+}
+
+main section:nth-of-type(5) svg{
+    background-color: aqua;
+    margin-bottom: -0.5rem;
+} */
+
+
 main section:nth-of-type(5) ul {
-    padding: 0;
     display: flex;
-    overflow: scroll;
-    scroll-snap-type:x mandatory;
-    scroll-behavior: smooth;
-    overscroll-behavior: contain;
-    overflow-y: scroll;
+    gap: 2em;
+    align-items: stretch;
+}
+
+main section:nth-of-type(5) ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(5) li a{
+    height: auto;
 }
 
 @media (min-width:54em) {
